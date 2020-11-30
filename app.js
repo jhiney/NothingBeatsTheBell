@@ -1,11 +1,21 @@
-const rp = require('request-promise');
+var rp = require('request-promise');
+var cheerio = require('cheerio')
+
+
 const url = 'https://www.tacobell.com/food';
 
-rp(url)
-    .then(function (html) {
-        //success!
-        console.log(html);
+var options = {
+    uri: url,
+    transform: function (body) {
+        return cheerio.load(body);
+    }
+};
+
+rp(options)
+    .then(function ($) {
+        // Process html like you would with jQuery...
+        console.log($.html())
     })
     .catch(function (err) {
-        //handle error
+        // Crawling failed or Cheerio choked...
     });
