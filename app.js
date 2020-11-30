@@ -13,7 +13,7 @@ var options = {
 
 rp(options)
     .then(function ($) {
-        // Process html like you would with jQuery...
+        // jQuery here
         var items = []
         $(".cls-category-card-item .text").each(function () {
             items.push($(this).text());
@@ -23,5 +23,5 @@ rp(options)
 
     })
     .catch(function (err) {
-        // Crawling failed or Cheerio choked...
+        // Crawling failed or Cheerio choked... poor buzz bee
     });
