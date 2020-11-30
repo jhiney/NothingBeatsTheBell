@@ -1,0 +1,14 @@
+{
+  "name": "nothing-beats-the-bell",
+  "version": "0.0.0",
+  "description": "NothingBeatsTheBell",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^5.5.0",
+    "request-promise": "^4.2.6"
+  }
+}
