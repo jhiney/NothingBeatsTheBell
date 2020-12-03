@@ -12,6 +12,8 @@ var mainMenu = {
     }
 };
 
+//TODO: add another API call for each submenu to get items. Shouldn't need to grab it all at once though - need to think about how I want to grab items.
+
 rp(mainMenu)
     .then(function ($) {
         //this grabs all the hrefs for the mainCategories
@@ -28,7 +30,7 @@ rp(mainMenu)
         getSubMenu();
     })
     .catch(function (err) {
-        // Crawling failed or Cheerio choked... poor buzz bee
+        // Crawling failed or Cheerio choked... poor Buzz bee
     });
 
 var getSubMenu = function () {
