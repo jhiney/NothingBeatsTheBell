@@ -2,22 +2,22 @@ var rp = require('request-promise');
 var cheerio = require('cheerio')
 var items = []
 
-const url = 'https://www.tacobell.com/food';
+const baseURL = 'https://www.tacobell.com/food';
 
 var getSubMenu = function () {
     items.forEach(function (subMenu) { console.log(subMenu) }) 
 }
 
 
-var options = {
-    uri: url,
+var mainMenu = {
+    uri: baseURL,
     transform: function (body) {
         return cheerio.load(body);
     }
 };
 
 
-rp(options)
+rp(mainMenu)
     .then(function ($) {
         // jQuery here
 
