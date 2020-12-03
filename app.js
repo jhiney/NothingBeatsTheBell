@@ -12,13 +12,9 @@ var mainMenu = {
     }
 };
 
-
 rp(mainMenu)
     .then(function ($) {
-        // jQuery here
-
         //this grabs all the hrefs for the mainCategories
-        
         $(".cls-category-card-item").each(function () {
             mainCategories.push($(this).attr('href'));
         });
@@ -27,12 +23,13 @@ rp(mainMenu)
         $(".cls-category-card-item .text").each(function () {
             mainCategories.push($(this).text());
         }); */
+
+        //grabs the submenus
         getSubMenu();
     })
     .catch(function (err) {
         // Crawling failed or Cheerio choked... poor buzz bee
     });
-
 
 var getSubMenu = function () {
     //foreach main category append the base URL and push to an array of the submenus
