@@ -73,7 +73,6 @@ var getItems = function (surl) {
 
         })
         .catch(function (err) {
-            // Crawling failed or Cheerio choked... poor Buzz bee
         });
 }
 
