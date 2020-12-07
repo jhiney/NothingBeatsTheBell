@@ -29,11 +29,6 @@ rp(mainMenu)
             mainCategories.push($(this).attr('href'));
         });
 
-        /* Just for future reference this grabs all the outter menu item names
-        $(".cls-category-card-item .text").each(function () {
-            mainCategories.push($(this).text());
-        }); */
-
         //grabs the submenus
         getSubMenu();
 
@@ -67,6 +62,7 @@ var getItems = function (surl) {
         .then(function ($) {
             //shows where it go the items from
             subItems.push(randomSub);
+            //.class #id tag
             $(".product-card .product-name a").each(function () {
                 subItems.push($(this).text());
             });
