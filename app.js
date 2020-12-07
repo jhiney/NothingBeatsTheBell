@@ -65,12 +65,14 @@ var getItems = function (surl) {
 
     rp(subMenu)
         .then(function ($) {
+            //shows where it go the items from
+            subItems.push(randomSub);
             $(".product-card .product-name a").each(function () {
                 subItems.push($(this).text());
             });
 
             console.log(subItems);
-
+            
         })
         .catch(function (err) {
         });
