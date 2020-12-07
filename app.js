@@ -75,4 +75,3 @@ var getItems = function (surl) {
         .catch(function (err) {
         });
 }
-
