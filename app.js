@@ -7,7 +7,7 @@ var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
-//string declaration
+//string declaration for the random submenu
 var randomSub = '';
 
 //taco bell baseURL
@@ -71,8 +71,7 @@ var getItems = function (surl) {
                 subItems.push($(this).text());
             });
 
-            console.log(subItems);
-            
+            console.log(subItems);          
         })
         .catch(function (err) {
         });
