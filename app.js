@@ -7,11 +7,15 @@ var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
+//this is your order
+var order = []
+
 //string declaration for the random submenu
 var randomSub = '';
 
 //taco bell baseURL
 const baseURL = 'https://www.tacobell.com/food';
+
 
 var mainMenu = {
     uri: baseURL,
@@ -33,7 +37,13 @@ rp(mainMenu)
         getSubMenu();
 
         //grabs the items from the submenu (random at the moment - will select in the future)
-        getItems(randomSub)
+        //getItems(randomSub)
+
+        var drinks = subMenuUrls.indexOf(baseURL + '/drinks')
+
+        var drinkUrl = subMenuUrls[drinks];
+
+        getDrink(drinkUrl)
     })
     .catch(function (err) {
         // Crawling failed or Cheerio choked... poor Buzz bee
@@ -67,7 +77,30 @@ var getItems = function (surl) {
                 subItems.push($(this).text());
             });
 
-            console.log(subItems);          
+            console.log(subMenuUrls);          
+        })
+        .catch(function (err) {
+        });
+}
+
+var getDrink = function (surl) {
+    var subMenu = {
+        uri: surl,
+        transform: function (body) {
+            return cheerio.load(body);
+        }
+    };
+
+    rp(subMenu)
+        .then(function ($) {
+            //shows where it go the items from
+            order.push(randomSub);
+            //.class #id tag
+            $(".product-card .product-name a").each(function () {
+                order.push($(this).text());
+            });
+
+            console.log(order[Math.floor(Math.random() * order.length)]);          
         })
         .catch(function (err) {
         });
