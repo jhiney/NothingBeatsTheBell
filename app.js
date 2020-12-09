@@ -1,7 +1,6 @@
 //neccessary packages
 var rp = require('request-promise');
 var cheerio = require('cheerio');
-const { get } = require('request-promise');
 
 //arrays for the different things
 var mainCategories = []
@@ -20,30 +19,32 @@ var randomSub = '';
 const baseURL = 'https://www.tacobell.com/food';
 
 
-var mainMenu = {
-    uri: baseURL,
-    transform: function (body) {
-        return cheerio.load(body);
-    }
-};
+async function getMainMenu() {
 
-//TODO: Replace random selection with user selection
+    var mainMenu = {
+        uri: baseURL,
+        transform: function (body) {
+            return cheerio.load(body);
+        }
+    };
 
-rp(mainMenu)
-    .then(function ($) {
-        //this grabs all the hrefs for the mainCategories
-        $(".cls-category-card-item").each(function () {
-            mainCategories.push($(this).attr('href'));
+    //TODO: Replace random selection with user selection
+
+    await rp(mainMenu)
+        .then(function ($) {
+            //this grabs all the hrefs for the mainCategories
+            $(".cls-category-card-item").each(function () {
+                mainCategories.push($(this).attr('href'));
+            });
+
+            //grabs the submenus
+
+
+        })
+        .catch(function (err) {
+            // Crawling failed or Cheerio choked... poor Buzz bee
         });
-
-        //grabs the submenus
-        
-
-        
-    })
-    .catch(function (err) {
-        // Crawling failed or Cheerio choked... poor Buzz bee
-    });
+}
 
 var getSubMenus = function () {
     //foreach main category append the base URL and push to an array of the submenus
@@ -57,7 +58,7 @@ var getSubMenus = function () {
     //randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
 }
 //surl is Sub Menu URL
-var getItems = function (surl) {
+async function getItems(surl) {
     var subMenu = {
         uri: surl,
         transform: function (body) {
@@ -65,7 +66,7 @@ var getItems = function (surl) {
         }
     };
 
-    rp(subMenu)
+    await rp(subMenu)
         .then(function ($) {
             //shows where it go the items from
             subItems.push(randomSub);
@@ -79,8 +80,8 @@ var getItems = function (surl) {
         .catch(function (err) {
         });
 }
+async function getDrinks(surl) {
 
-var getDrink = function (surl) {
     var subMenu = {
         uri: surl,
         transform: function (body) {
@@ -88,7 +89,7 @@ var getDrink = function (surl) {
         }
     };
 
-    rp(subMenu)
+    await rp(subMenu)
         .then(function ($) {
             //shows where it go the items from
             tempMenu.push(randomSub);
@@ -105,7 +106,7 @@ var getDrink = function (surl) {
 
     
 }
-function getItem(item) {
+async function getItem(item) {
 
     var itemUrl = baseURL + '/' + item
 
@@ -116,21 +117,30 @@ function getItem(item) {
         }
     };
 
-    rp(itemMenu)
+    await rp(itemMenu)
         .then(function ($) {          
             //.class #id tag
             $(".product-card .product-name a").each(function () {
                 tempMenu.push($(this).text());
-                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
-                
             });
-            console.log(10)
+            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
+            tempMenu = []
         })
 
         .catch(function (err) {
         }); 
 
-    console.log(5)
+    
 }
 
-getItem('drinks')
+async function start() {
+    await getItem('drinks')
+    await getItem('tacos')
+    await getMainMenu()
+
+    console.log(order);
+    console.log(mainCategories)
+}
+
+// Call start
+start();
