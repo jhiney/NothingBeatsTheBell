@@ -1,14 +1,17 @@
 //neccessary packages
 var rp = require('request-promise');
-var cheerio = require('cheerio')
+var cheerio = require('cheerio');
+const { get } = require('request-promise');
 
 //arrays for the different things
 var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
-//this is your order
-var order = []
+
+var tempMenu = [];
+
+var order = [];
 
 //string declaration for the random submenu
 var randomSub = '';
@@ -34,22 +37,15 @@ rp(mainMenu)
         });
 
         //grabs the submenus
-        getSubMenu();
+        
 
-        //grabs the items from the submenu (random at the moment - will select in the future)
-        //getItems(randomSub)
-
-        var drinks = subMenuUrls.indexOf(baseURL + '/drinks')
-
-        var drinkUrl = subMenuUrls[drinks];
-
-        getDrink(drinkUrl)
+        
     })
     .catch(function (err) {
         // Crawling failed or Cheerio choked... poor Buzz bee
     });
 
-var getSubMenu = function () {
+var getSubMenus = function () {
     //foreach main category append the base URL and push to an array of the submenus
     mainCategories.forEach(function (subMenu) {
         subMenu = subMenu.replace('food/','')
@@ -57,7 +53,8 @@ var getSubMenu = function () {
         subMenuUrls.push(subMenu);
     })
 
-    randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
+    //This gets a random submenu, useful for testing
+    //randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
 }
 //surl is Sub Menu URL
 var getItems = function (surl) {
@@ -94,14 +91,46 @@ var getDrink = function (surl) {
     rp(subMenu)
         .then(function ($) {
             //shows where it go the items from
-            order.push(randomSub);
+            tempMenu.push(randomSub);
             //.class #id tag
             $(".product-card .product-name a").each(function () {
-                order.push($(this).text());
+                tempMenu.push($(this).text());
             });
 
-            console.log(order[Math.floor(Math.random() * order.length)]);          
+            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);       
+
         })
         .catch(function (err) {
         });
+
+    
 }
+function getItem(item) {
+
+    var itemUrl = baseURL + '/' + item
+
+    var itemMenu = {
+        uri: itemUrl,
+        transform: function (body) {
+            return cheerio.load(body);
+        }
+    };
+
+    rp(itemMenu)
+        .then(function ($) {          
+            //.class #id tag
+            $(".product-card .product-name a").each(function () {
+                tempMenu.push($(this).text());
+                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
+                
+            });
+            console.log(10)
+        })
+
+        .catch(function (err) {
+        }); 
+
+    console.log(5)
+}
+
+getItem('drinks')
