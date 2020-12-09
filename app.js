@@ -1,14 +1,17 @@
 //neccessary packages
 var rp = require('request-promise');
-var cheerio = require('cheerio')
+var cheerio = require('cheerio');
 
 //arrays for the different things
 var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
-//this is your order
-var order = []
+//stores all items of a particular submenu to then be placed in an order
+var tempMenu = [];
+
+//this is what will be output. Live Mas
+var order = [];
 
 //string declaration for the random submenu
 var randomSub = '';
@@ -17,39 +20,33 @@ var randomSub = '';
 const baseURL = 'https://www.tacobell.com/food';
 
 
-var mainMenu = {
-    uri: baseURL,
-    transform: function (body) {
-        return cheerio.load(body);
-    }
-};
+async function getMainMenu() {
 
-//TODO: Replace random selection with user selection
+    var mainMenu = {
+        uri: baseURL,
+        transform: function (body) {
+            return cheerio.load(body);
+        }
+    };
 
-rp(mainMenu)
-    .then(function ($) {
-        //this grabs all the hrefs for the mainCategories
-        $(".cls-category-card-item").each(function () {
-            mainCategories.push($(this).attr('href'));
+    //TODO: Replace random selection with user selection
+    await rp(mainMenu)
+        .then(function ($) {
+            //this grabs all the hrefs for the mainCategories
+            $(".cls-category-card-item").each(function () {
+                mainCategories.push($(this).attr('href'));
+            });
+
+            //grabs the submenus
+
+
+        })
+        .catch(function (err) {
+            // Crawling failed or Cheerio choked... poor Buzz bee
         });
+}
 
-        //grabs the submenus
-        getSubMenu();
-
-        //grabs the items from the submenu (random at the moment - will select in the future)
-        //getItems(randomSub)
-
-        var drinks = subMenuUrls.indexOf(baseURL + '/drinks')
-
-        var drinkUrl = subMenuUrls[drinks];
-
-        getDrink(drinkUrl)
-    })
-    .catch(function (err) {
-        // Crawling failed or Cheerio choked... poor Buzz bee
-    });
-
-var getSubMenu = function () {
+var getSubMenus = function () {
     //foreach main category append the base URL and push to an array of the submenus
     mainCategories.forEach(function (subMenu) {
         subMenu = subMenu.replace('food/','')
@@ -57,10 +54,11 @@ var getSubMenu = function () {
         subMenuUrls.push(subMenu);
     })
 
+    //This gets a random submenu, useful for testing
     randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
 }
 //surl is Sub Menu URL
-var getItems = function (surl) {
+async function getItems(surl) {
     var subMenu = {
         uri: surl,
         transform: function (body) {
@@ -68,7 +66,7 @@ var getItems = function (surl) {
         }
     };
 
-    rp(subMenu)
+    await rp(subMenu)
         .then(function ($) {
             //shows where it go the items from
             subItems.push(randomSub);
@@ -82,8 +80,8 @@ var getItems = function (surl) {
         .catch(function (err) {
         });
 }
+async function getDrinks(surl) {
 
-var getDrink = function (surl) {
     var subMenu = {
         uri: surl,
         transform: function (body) {
@@ -91,17 +89,64 @@ var getDrink = function (surl) {
         }
     };
 
-    rp(subMenu)
+    await rp(subMenu)
         .then(function ($) {
             //shows where it go the items from
-            order.push(randomSub);
+            tempMenu.push(randomSub);
             //.class #id tag
             $(".product-card .product-name a").each(function () {
-                order.push($(this).text());
+                tempMenu.push($(this).text());
             });
 
-            console.log(order[Math.floor(Math.random() * order.length)]);          
+            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);       
+
+            //clear the temp menu for speed
+            tempMenu = []
         })
         .catch(function (err) {
         });
 }
+
+async function getItem(item) {
+
+    var itemUrl = baseURL + '/' + item
+
+    var itemMenu = {
+        uri: itemUrl,
+        transform: function (body) {
+            return cheerio.load(body);
+        }
+    };
+
+    await rp(itemMenu)
+        .then(function ($) {          
+            //.class #id tag
+            $(".product-card .product-name a").each(function () {
+                tempMenu.push($(this).text());
+            });
+            //add a random item to your order
+            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
+
+            //clear the temp menu for speed
+            tempMenu = []
+        })
+
+        .catch(function (err) {
+        }); 
+}
+
+async function start() {
+
+    getItem('drinks')
+    getItem('tacos')
+
+    //Only need 1 await but it has to be on the last async function call
+    await getMainMenu()
+
+    //testing
+    console.log(order);
+    console.log(mainCategories)
+}
+
+// Call start
+start();
