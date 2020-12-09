@@ -7,9 +7,10 @@ var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
-
+//stores all items of a particular submenu to then be placed in an order
 var tempMenu = [];
 
+//this is what will be output. Live Mas
 var order = [];
 
 //string declaration for the random submenu
@@ -29,7 +30,6 @@ async function getMainMenu() {
     };
 
     //TODO: Replace random selection with user selection
-
     await rp(mainMenu)
         .then(function ($) {
             //this grabs all the hrefs for the mainCategories
@@ -55,7 +55,7 @@ var getSubMenus = function () {
     })
 
     //This gets a random submenu, useful for testing
-    //randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
+    randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
 }
 //surl is Sub Menu URL
 async function getItems(surl) {
@@ -100,12 +100,13 @@ async function getDrinks(surl) {
 
             order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);       
 
+            //clear the temp menu for speed
+            tempMenu = []
         })
         .catch(function (err) {
         });
-
-    
 }
+
 async function getItem(item) {
 
     var itemUrl = baseURL + '/' + item
@@ -123,21 +124,26 @@ async function getItem(item) {
             $(".product-card .product-name a").each(function () {
                 tempMenu.push($(this).text());
             });
+            //add a random item to your order
             order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
+
+            //clear the temp menu for speed
             tempMenu = []
         })
 
         .catch(function (err) {
         }); 
-
-    
 }
 
 async function start() {
-    await getItem('drinks')
-    await getItem('tacos')
+
+    getItem('drinks')
+    getItem('tacos')
+
+    //Only need 1 await but it has to be on the last async function call
     await getMainMenu()
 
+    //testing
     console.log(order);
     console.log(mainCategories)
 }
