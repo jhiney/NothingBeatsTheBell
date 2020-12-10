@@ -1,0 +1,606 @@
+[
+    {
+        "Menu": "new",
+        "Item": "Toasted Cheddar Chalupa Box"
+    },
+    {
+        "Menu": "new",
+        "Item": "Toasted Cheddar Chalupa"
+    },
+    {
+        "Menu": "new",
+        "Item": "Black Bean Toasted Cheddar Chalupa"
+    },
+    {
+        "Menu": "new",
+        "Item": "Veggie Nachos Party Pack"
+    },
+    {
+        "Menu": "new",
+        "Item": "Black Bean Chalupa"
+    },
+    {
+        "Menu": "new",
+        "Item": "Grilled Cheese Burrito"
+    },
+    {
+        "Menu": "online-exclusives",
+        "Item": "Quesarito"
+    },
+    {
+        "Menu": "online-exclusives",
+        "Item": "Black Bean Quesarito"
+    },
+    {
+        "Menu": "online-exclusives",
+        "Item": "Black Bean Chalupa"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Toasted Cheddar Chalupa Box"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Doritos® Locos Tacos Supreme Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Doritos® Locos Tacos Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "2 Chicken Chalupas Supreme Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Chicken Quesadilla Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Crunchwrap Supreme® Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Nachos BellGrande® Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Crunchy Tacos Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Crunchy Tacos Supreme® Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Soft Tacos Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "3 Soft Tacos Supreme® Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Burrito Supreme® Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Breakfast Crunchwrap Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Soft Taco"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Soft Taco Supreme®"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Crunchy Taco"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "3 Crunchy Tacos Combo"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Crunchy Taco Supreme®"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "3 Crunchy Tacos Supreme® Combo"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Nacho Cheese Doritos® Locos Tacos"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Nacho Cheese Doritos® Locos Tacos Supreme®"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Chalupa Supreme"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Cheesy Gordita Crunch"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Supreme Taco Party Pack"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Soft Taco Party Pack"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Supreme Soft Taco Party Pack"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Grilled Cheese Burrito"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Bean Burrito"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Beefy 5-Layer Burrito"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Quesarito"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Burrito Supreme®"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Crunchwrap Supreme®"
+    },
+    {
+        "Menu": "nachos",
+        "Item": "Veggie Nachos Party Pack"
+    },
+    {
+        "Menu": "nachos",
+        "Item": "Nachos Party Pack"
+    },
+    {
+        "Menu": "nachos",
+        "Item": "Nachos BellGrande®"
+    },
+    {
+        "Menu": "nachos",
+        "Item": "Nachos BellGrande® Combo"
+    },
+    {
+        "Menu": "nachos",
+        "Item": "Chips and Nacho Cheese Sauce"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Chicken Quesadilla"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Chicken Quesadilla Combo"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Steak Quesadilla"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Cheese Quesadilla"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Black Bean Quesarito"
+    },
+    {
+        "Menu": "quesadillas",
+        "Item": "Quesarito"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Toasted Cheddar Chalupa"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Black Bean Toasted Cheddar Chalupa"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Black Bean Chalupa"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Black Bean Crunchwrap Supreme®"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Chalupa Supreme"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Crunchwrap Supreme®"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Cheesy Gordita Crunch"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Power Menu Bowl"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Power Menu Bowl - Veggie"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Black Bean Quesarito"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Cheesy Roll Up"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Soft Taco Supreme®"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Soft Taco"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Crunchy Taco"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Nacho Cheese Doritos® Locos Tacos"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Steak Quesadilla"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Chicken Quesadilla"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Nachos BellGrande®"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Quesarito"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Black Beans"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Black Beans and Rice"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Cinnamon Twists"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Cinnabon Delights® 2 Pack"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Cinnabon Delights® 12 Pack"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Mild Sauce Packet"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Hot Sauce Packet"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Fire Sauce Packet"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Diablo Sauce Packet"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Happier Hour® Beverage"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Dragon Fruit Freeze"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Dragon Fruit Freeze No Syrup"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Wild Strawberry Freeze"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Mountain Dew Baja Blast® Freeze"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Fountain Drink"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Pepsi®"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Diet Pepsi®"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Pepsi® Zero Sugar"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Mountain Dew®"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Mountain Dew Baja Blast®"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Mountain Dew® Baja Blast™ Zero Sugar"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Mountain Dew® Kickstart™ Orange Citrus"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Sierra Mist®"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "G2 Gatorade® Fruit Punch"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Tropicana® Pink Lemonade"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Brisk® Mango Fiesta"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Lipton® Unsweetened Iced Tea"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Premium Hot Coffee"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Regular Iced Coffee"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Cup of Water"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Veggie Nachos Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Nachos Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Taco & Burrito Cravings Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Taco Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Soft Taco Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Variety Taco Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Supreme Taco Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Supreme Soft Taco Party Pack"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Supreme Variety Taco Party Pack"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Chicken Chipotle Melt"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Beef Burrito"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Cheesy Bean and Rice Burrito"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Cheesy Roll Up"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Chips and Nacho Cheese Sauce"
+    },
+    {
+        "Menu": "cravings-value-menu",
+        "Item": "Cinnamon Twists"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Bean Toasted Cheddar Chalupa"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Veggie Nachos Party Pack"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Bean Chalupa"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Bean Quesarito"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Bean Crunchwrap Supreme®"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Power Menu Bowl - Veggie"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Bean Burrito"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cheesy Bean and Rice Burrito"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cheesy Roll Up"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cheese Quesadilla"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Chips and Nacho Cheese Sauce"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Beans and Rice"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cinnamon Twists"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cinnabon Delights® 2 Pack"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cinnabon Delights® 12 Pack"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Hash Brown"
+    },
+    {
+        "Menu": "power-menu",
+        "Item": "Power Menu Bowl"
+    },
+    {
+        "Menu": "power-menu",
+        "Item": "Power Menu Bowl - Veggie"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Cheesy Toasted Breakfast Burrito"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Cheesy Toasted Breakfast Burrito Potato"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Hash Brown Toasted Breakfast Burrito Steak"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Hash Brown Toasted Breakfast Burrito"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Grande Toasted Breakfast Burrito Steak"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Grande Toasted Breakfast Burrito"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Grande Toasted Breakfast Burrito Combo"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Breakfast Crunchwrap"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Breakfast Crunchwrap Combo"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Hash Brown"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Cinnabon Delights® 2 Pack"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Cinnabon Delights® 12 Pack"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Mountain Dew® Kickstart™ Orange Citrus - Small"
+    },
+    {
+        "Menu": "breakfast",
+        "Item": "Breakfast Salsa"
+    }
+]

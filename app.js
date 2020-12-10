@@ -8,6 +8,12 @@ var mainCategories = []
 var subMenuUrls = []
 var subItems = []
 
+var jason = require('./menuItems.json')
+
+
+
+
+
 //stores all items of a particular submenu to then be placed in an order
 var tempMenu = [];
 
@@ -19,6 +25,7 @@ var randomSub = '';
 
 //taco bell baseURL
 const baseURL = 'https://www.tacobell.com/food';
+const baseURLNoFood = 'https://www.tacobell.com';
 
 async function getMainMenu() {
 
@@ -35,6 +42,17 @@ async function getMainMenu() {
         }, (error) => console.log(error));
 }
 
+async function mainToJson() {
+
+    await getMainMenu()
+
+    for (var categories of mainCategories) {
+        categories = baseURLNoFood + categories;
+        await getItems(categories)
+        //console.log(categories)
+    }
+}
+
 var getSubMenus = function () {
     //foreach main category append the base URL and push to an array of the submenus
     mainCategories.forEach(function (subMenu) {
@@ -49,21 +67,40 @@ var getSubMenus = function () {
 //surl is Sub Menu URL
 async function getItems(surl) {
 
+    var menu = surl.replace('https://www.tacobell.com/food/', '')
+
+   
+
+
+        
     await axios.get(surl)
         .then((response) => {
             if (response.status === 200) {
                 const html = response.data;
                 const $ = cheerio.load(html);
 
-                //shows where it go the items from
-                subItems.push(randomSub);
-                //.class #id tag
-                $(".product-card .product-name a").each(function () {
-                    subItems.push($(this).text());
+                
+                $(".product-card .product-name a").each(function (i) {
+                    subItems.push( {
+                        Menu: menu,
+                        Item: $(this).text()
+                    })
                 }); 
+
+                
             }
+
+            
+            //menuitems.items.push(subItems)
+
+            //const menuTrimmed = menuitems.filter(n => n !== undefined)
+            fs.writeFile('menuItems.json',
+                JSON.stringify(subItems, null, 4),
+                (err) => console.log('File successfully written!'))
+        
         }, (error) => console.log(error));
 }
+
 
 async function getDrinks(surl) {
 
@@ -118,8 +155,8 @@ async function getItem(item) {
 
 async function start() {
 
-    await getItem('drinks')
-    await getItem('tacos')
+    //await getItem('drinks')
+    //await getItem('tacos')
 
     /* You need all 3 to use getItems - TODO: Change this so it doesn't require
     await getMainMenu()
@@ -128,7 +165,14 @@ async function start() {
     */
 
     //testing
-    console.log(order.item);
+    //await mainToJson()
+    //console.log(mainCategories);
+
+    var objectKeysArray = Object.keys(jason)
+    objectKeysArray.forEach(function (objKey) {
+        var objValue = jason[objKey]
+        console.log(objValue)
+    })
     
 }
 
