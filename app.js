@@ -1,7 +1,5 @@
 //neccessary packages
-var rp = require('request-promise');
 var cheerio = require('cheerio');
-
 let axios = require('axios')
 
 //arrays for the different things
