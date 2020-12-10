@@ -99,11 +99,11 @@ async function getItem(item) {
                 const html = response.data;
                 const $ = cheerio.load(html);
 
-                $(".product-card .product-name a").each(function(i) {
-                    tempMenu[i] = {
+                $(".product-card .product-name a").each(function() {
+                    tempMenu.push( {
                         Menu: item,
                         Item: $(this).text()
-                    }
+                    })
 
                     //tempMenu.push($(this).text());
                 });
@@ -128,7 +128,7 @@ async function start() {
     */
 
     //testing
-    console.log(order.item);
+    console.log(order);
     
 }
 
