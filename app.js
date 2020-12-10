@@ -1,6 +1,7 @@
 //neccessary packages
 var cheerio = require('cheerio');
 let axios = require('axios')
+let fs = require('fs')
 
 //arrays for the different things
 var mainCategories = []
@@ -31,7 +32,7 @@ async function getMainMenu() {
                     mainCategories.push($(this).attr('href'));
                 });
             }
-        }, (error) => console.log(err));
+        }, (error) => console.log(error));
 }
 
 var getSubMenus = function () {
@@ -61,7 +62,7 @@ async function getItems(surl) {
                     subItems.push($(this).text());
                 }); 
             }
-        }, (error) => console.log(err));
+        }, (error) => console.log(error));
 }
 
 async function getDrinks(surl) {
@@ -84,7 +85,7 @@ async function getDrinks(surl) {
                 //clear the temp menu for speed
                 tempMenu = []
             }
-        }, (error) => console.log(err));
+        }, (error) => console.log(error));
 
 }
 
@@ -98,8 +99,13 @@ async function getItem(item) {
                 const html = response.data;
                 const $ = cheerio.load(html);
 
-                $(".product-card .product-name a").each(function () {
-                    tempMenu.push($(this).text());
+                $(".product-card .product-name a").each(function(i) {
+                    tempMenu[i] = {
+                        Menu: item,
+                        Item: $(this).text()
+                    }
+
+                    //tempMenu.push($(this).text());
                 });
                 //add a random item to your order
                 order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
@@ -107,7 +113,7 @@ async function getItem(item) {
                 //clear the temp menu for speed
                 tempMenu = []
             }
-        }, (error) => console.log(err));
+        }, (error) => console.log(error));
 }
 
 async function start() {
@@ -122,7 +128,7 @@ async function start() {
     */
 
     //testing
-    console.log(order);
+    console.log(order.item);
     
 }
 
