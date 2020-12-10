@@ -2,6 +2,8 @@
 var rp = require('request-promise');
 var cheerio = require('cheerio');
 
+let axios = require('axios')
+
 //arrays for the different things
 var mainCategories = []
 var subMenuUrls = []
@@ -22,28 +24,17 @@ const baseURL = 'https://www.tacobell.com/food';
 
 async function getMainMenu() {
 
-    var mainMenu = {
-        uri: baseURL,
-        transform: function (body) {
-            return cheerio.load(body);
-        }
-    };
+    await axios.get(baseURL)
+        .then((response) => {
+            if (response.status === 200) {
+                const html = response.data;
+                const $ = cheerio.load(html);
 
-    //TODO: Replace random selection with user selection
-    await rp(mainMenu)
-        .then(function ($) {
-            //this grabs all the hrefs for the mainCategories
-            $(".cls-category-card-item").each(function () {
-                mainCategories.push($(this).attr('href'));
-            });
-
-            //grabs the submenus
-
-
-        })
-        .catch(function (err) {
-            // Crawling failed or Cheerio choked... poor Buzz bee
-        });
+                $(".cls-category-card-item").each(function () {
+                    mainCategories.push($(this).attr('href'));
+                });
+            }
+        }, (error) => console.log(err));
 }
 
 var getSubMenus = function () {
@@ -59,93 +50,82 @@ var getSubMenus = function () {
 }
 //surl is Sub Menu URL
 async function getItems(surl) {
-    var subMenu = {
-        uri: surl,
-        transform: function (body) {
-            return cheerio.load(body);
-        }
-    };
 
-    await rp(subMenu)
-        .then(function ($) {
-            //shows where it go the items from
-            subItems.push(randomSub);
-            //.class #id tag
-            $(".product-card .product-name a").each(function () {
-                subItems.push($(this).text());
-            });
+    await axios.get(surl)
+        .then((response) => {
+            if (response.status === 200) {
+                const html = response.data;
+                const $ = cheerio.load(html);
 
-            console.log(subMenuUrls);          
-        })
-        .catch(function (err) {
-        });
+                //shows where it go the items from
+                subItems.push(randomSub);
+                //.class #id tag
+                $(".product-card .product-name a").each(function () {
+                    subItems.push($(this).text());
+                }); 
+            }
+        }, (error) => console.log(err));
 }
 async function getDrinks(surl) {
 
-    var subMenu = {
-        uri: surl,
-        transform: function (body) {
-            return cheerio.load(body);
-        }
-    };
+    await axios.get(surl)
+        .then((response) => {
+            if (response.status === 200) {
+                const html = response.data;
+                const $ = cheerio.load(html);
 
-    await rp(subMenu)
-        .then(function ($) {
-            //shows where it go the items from
-            tempMenu.push(randomSub);
-            //.class #id tag
-            $(".product-card .product-name a").each(function () {
-                tempMenu.push($(this).text());
-            });
+                //shows where it go the items from
+                tempMenu.push(randomSub);
+                //.class #id tag
+                $(".product-card .product-name a").each(function () {
+                    tempMenu.push($(this).text());
+                });
 
-            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);       
+                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
 
-            //clear the temp menu for speed
-            tempMenu = []
-        })
-        .catch(function (err) {
-        });
+                //clear the temp menu for speed
+                tempMenu = []
+            }
+        }, (error) => console.log(err));
+
 }
 
 async function getItem(item) {
 
     var itemUrl = baseURL + '/' + item
 
-    var itemMenu = {
-        uri: itemUrl,
-        transform: function (body) {
-            return cheerio.load(body);
-        }
-    };
+    await axios.get(itemUrl)
+        .then((response) => {
+            if (response.status === 200) {
+                const html = response.data;
+                const $ = cheerio.load(html);
 
-    await rp(itemMenu)
-        .then(function ($) {          
-            //.class #id tag
-            $(".product-card .product-name a").each(function () {
-                tempMenu.push($(this).text());
-            });
-            //add a random item to your order
-            order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
+                $(".product-card .product-name a").each(function () {
+                    tempMenu.push($(this).text());
+                });
+                //add a random item to your order
+                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
 
-            //clear the temp menu for speed
-            tempMenu = []
-        })
-
-        .catch(function (err) {
-        }); 
+                //clear the temp menu for speed
+                tempMenu = []
+            }
+        }, (error) => console.log(err));
 }
 
 async function start() {
 
-    getItem('drinks')
-    getItem('tacos')
+    await getItem('drinks')
+    await getItem('tacos')
 
-    //Only need 1 await but it has to be on the last async function call
+    /* You need all 3 to use getItems - TODO: Change this so it doesn't require
     await getMainMenu()
+    await getSubMenus()
+    await getItems(randomSub)
+    */
 
     //testing
     console.log(order);
-    console.log(mainCategories)
+    
 }
 
 // Call start
