@@ -19,7 +19,6 @@ var randomSub = '';
 //taco bell baseURL
 const baseURL = 'https://www.tacobell.com/food';
 
-
 async function getMainMenu() {
 
     await axios.get(baseURL)
@@ -64,6 +63,7 @@ async function getItems(surl) {
             }
         }, (error) => console.log(err));
 }
+
 async function getDrinks(surl) {
 
     await axios.get(surl)
@@ -126,5 +126,4 @@ async function start() {
     
 }
 
-// Call start
 start();
