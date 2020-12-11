@@ -80,10 +80,12 @@ async function getItems(surl) {
                 const $ = cheerio.load(html);
 
                 
-                $(".product-card .product-name a").each(function (i) {
+                $(".product-card .product-details").each(function (i) {
                     subItems.push( {
                         Menu: menu,
-                        Item: $(this).text()
+                        Item: $(this).children('.product-name').find('a').text(),
+                        Price: $(this).children('.product-price').text().trim(),
+                        Calories: $(this).children('.product-calorie').text().trim()
                     })
                 }); 
 
@@ -165,14 +167,11 @@ async function start() {
     */
 
     //testing
-    //await mainToJson()
+    await mainToJson()
     //console.log(mainCategories);
 
-    var objectKeysArray = Object.keys(jason)
-    objectKeysArray.forEach(function (objKey) {
-        var objValue = jason[objKey]
-        console.log(objValue)
-    })
+  
+    
     
 }
 
