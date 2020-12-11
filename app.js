@@ -167,12 +167,8 @@ async function start() {
     */
 
     //testing
-    await mainToJson()
-    //console.log(mainCategories);
-
-  
-    
-    
+    //await mainToJson()
+    console.log(jason[1]);   
 }
 
 start();
