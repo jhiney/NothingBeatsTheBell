@@ -10,10 +10,6 @@ var subItems = []
 
 var jason = require('./menuItems.json')
 
-
-
-
-
 //stores all items of a particular submenu to then be placed in an order
 var tempMenu = [];
 
@@ -68,11 +64,7 @@ var getSubMenus = function () {
 async function getItems(surl) {
 
     var menu = surl.replace('https://www.tacobell.com/food/', '')
-
-   
-
-
-        
+     
     await axios.get(surl)
         .then((response) => {
             if (response.status === 200) {
@@ -91,10 +83,6 @@ async function getItems(surl) {
 
                 
             }
-
-            
-            //menuitems.items.push(subItems)
-
             //const menuTrimmed = menuitems.filter(n => n !== undefined)
             fs.writeFile('menuItems.json',
                 JSON.stringify(subItems, null, 4),
@@ -102,7 +90,6 @@ async function getItems(surl) {
         
         }, (error) => console.log(error));
 }
-
 
 async function getDrinks(surl) {
 
