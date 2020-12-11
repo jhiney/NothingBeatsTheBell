@@ -138,11 +138,11 @@ async function getItem(item) {
                 const html = response.data;
                 const $ = cheerio.load(html);
 
-                $(".product-card .product-name a").each(function(i) {
-                    tempMenu[i] = {
+                $(".product-card .product-name a").each(function() {
+                    tempMenu.push( {
                         Menu: item,
                         Item: $(this).text()
-                    }
+                    })
 
                     //tempMenu.push($(this).text());
                 });
@@ -157,8 +157,8 @@ async function getItem(item) {
 
 async function start() {
 
-    //await getItem('drinks')
-    //await getItem('tacos')
+    await getItem('drinks')
+    await getItem('tacos')
 
     /* You need all 3 to use getItems - TODO: Change this so it doesn't require
     await getMainMenu()
@@ -167,8 +167,12 @@ async function start() {
     */
 
     //testing
+
     //await mainToJson()
     console.log(jason[1]);   
+
+    console.log(order);
+    
 }
 
 start();
