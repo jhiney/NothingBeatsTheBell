@@ -70,8 +70,7 @@ async function getItems(surl) {
             if (response.status === 200) {
                 const html = response.data;
                 const $ = cheerio.load(html);
-
-                
+               
                 $(".product-card .product-details").each(function (i) {
                     subItems.push( {
                         Menu: menu,
@@ -79,9 +78,7 @@ async function getItems(surl) {
                         Price: $(this).children('.product-price').text().trim(),
                         Calories: $(this).children('.product-calorie').text().trim()
                     })
-                }); 
-
-                
+                });           
             }
             //const menuTrimmed = menuitems.filter(n => n !== undefined)
             fs.writeFile('menuItems.json',
@@ -112,12 +109,11 @@ async function getDrinks(surl) {
                 tempMenu = []
             }
         }, (error) => console.log(error));
-
 }
 
-async function getItem(item) {
+async function getItem(itemMenu) {
 
-    var itemUrl = baseURL + '/' + item
+    var itemUrl = baseURL + '/' + itemMenu
 
     await axios.get(itemUrl)
         .then((response) => {
@@ -127,7 +123,7 @@ async function getItem(item) {
 
                 $(".product-card .product-name a").each(function() {
                     tempMenu.push( {
-                        Menu: item,
+                        Menu: itemMenu,
                         Item: $(this).text()
                     })
 
@@ -144,8 +140,8 @@ async function getItem(item) {
 
 async function start() {
 
-    await getItem('drinks')
-    await getItem('tacos')
+    //await getItem('drinks')
+    //await getItem('tacos')
 
     /* You need all 3 to use getItems - TODO: Change this so it doesn't require
     await getMainMenu()
@@ -156,10 +152,9 @@ async function start() {
     //testing
 
     //await mainToJson()
-    console.log(jason[1]);   
+    console.log(jason[1].Item);   
 
-    console.log(order);
-    
+    //console.log(order);    
 }
 
 start();
