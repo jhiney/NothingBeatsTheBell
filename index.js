@@ -5,7 +5,6 @@ var combos = [];
 var tacos = [];
 var entrees = [];
 var burritos = [];
-var misc = [];
 var valueMenu = [];
 var vegitarian = [];
 var breakfast = [];
