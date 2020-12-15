@@ -98,12 +98,14 @@ function getDrink() {
 
 function getCalories(itemName) {
 
+    var itemCalories = '';
     allItems.forEach((item) => {
         if (item.Item === itemName) {
-            itemName = item.Calories
+            itemCalories = item.Calories
         }
     })
-    return itemName;
+    
+    return itemCalories;
 }
 
 //module exports
