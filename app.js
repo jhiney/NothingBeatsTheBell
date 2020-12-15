@@ -3,6 +3,8 @@ var cheerio = require('cheerio');
 let axios = require('axios')
 let fs = require('fs')
 
+var NBTB = require('./index.js')
+
 //arrays for the different things
 var mainCategories = []
 var subMenuUrls = []
@@ -152,9 +154,10 @@ async function start() {
     //testing
 
     //await mainToJson()
-    console.log(jason[1].Item);   
+    //console.log(jason[1].Item);   
 
     //console.log(order);    
 }
 
-module.exports.area = radius => Math.PI *radius*radius;
+console.log(NBTB.getDrink());
+
