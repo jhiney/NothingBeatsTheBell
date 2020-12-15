@@ -9,8 +9,6 @@ var valueMenu = [];
 var vegitarian = [];
 var breakfast = [];
 
-
-
 allItems.forEach((item) => {
 
     if (item.Menu === 'new') {
@@ -79,7 +77,6 @@ allItems.forEach((item) => {
     }
 });
 
-
 allItems.forEach((item) => {
     if (item.Menu === 'burritos' || item.Menu === 'nachos' || item.Menu === 'tacos' || item.Menu === 'quesadillas' || item.Menu === 'specialties') {
         entrees.push({
@@ -99,7 +96,19 @@ function getDrink() {
     return drinks[Math.floor(Math.random() * newItems.length)].Item;;
 }
 
+function getCalories(itemName) {
 
+    allItems.forEach((item) => {
+        if (item.Item === itemName) {
+            itemName = item.Calories
+        }
+    })
+    return itemName;
+}
+
+//module exports
 exports.getNew = getNew;
 
 exports.getDrink = getDrink;
+
+exports.getCalories = getCalories;
