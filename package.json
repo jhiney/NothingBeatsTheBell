@@ -1,8 +1,8 @@
 {
   "name": "nothing-beats-the-bell",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "NothingBeatsTheBell",
-  "main": "app.js",
+  "main": "index.js",
   "author": {
     "name": "Jhiney"
   },
