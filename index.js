@@ -108,9 +108,23 @@ function getCalories(itemName) {
     return itemCalories;
 }
 
+function getPrice(itemName) {
+
+    var itemPrice = '';
+    allItems.forEach((item) => {
+        if (item.Item === itemName) {
+            itemPrice = item.Price
+        }
+    })
+
+    return itemPrice;
+}
+
 //module exports
 exports.getNew = getNew;
 
 exports.getDrink = getDrink;
 
 exports.getCalories = getCalories;
+
+exports.getPrice = getPrice;

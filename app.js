@@ -163,4 +163,5 @@ var drink = NBTB.getDrink();
 var newItem = NBTB.getNew();
 console.log(newItem)
 console.log(NBTB.getCalories(newItem))
+console.log(NBTB.getPrice(newItem))
 
