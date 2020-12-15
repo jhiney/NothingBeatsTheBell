@@ -157,4 +157,4 @@ async function start() {
     //console.log(order);    
 }
 
-start();
+module.exports.area = radius => Math.PI*radius*radius

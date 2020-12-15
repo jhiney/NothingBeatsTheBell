@@ -1,10 +1,10 @@
 {
   "name": "nothing-beats-the-bell",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "NothingBeatsTheBell",
   "main": "app.js",
   "author": {
-    "name": ""
+    "name": "Jhiney"
   },
   "dependencies": {
     "axios": "^0.21.0",
