@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 let axios = require('axios')
 let fs = require('fs')
 
-var NBTB = require('./index.js')
+var NBTB = require('../index.js')
 
 //arrays for the different things
 var mainCategories = []
@@ -75,7 +75,7 @@ async function start() {
 
 //start();
 
-var taco  = NBTB.getAll();
+var taco  = NBTB.getItem();
 console.log(taco)
 //console.log(NBTB.getCalories(taco))
 //console.log(NBTB.getPrice(taco))

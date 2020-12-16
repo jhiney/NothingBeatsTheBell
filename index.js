@@ -1,4 +1,4 @@
-var allItems = require('./menuItems.json');
+var allItems = require('./data/menuItems.json');
 var newItems = [], drinks = [], combos = [], tacos = [], entrees = [], burritos = [], valueMenu = [], vegitarian = [], breakfast = [];
 
 allItems.forEach((item) => {
@@ -194,6 +194,20 @@ var getDrink = (itemName = 'nothing') => {
     }
 }
 
+var getItem = (itemName = 'nothing') => {
+    if (itemName) {
+        var specificItemIndex = allItems.findIndex((item) => {
+            return item.Item === itemName;
+        })
+        if (specificItemIndex > -1) {
+            return allItems[specificItemIndex].Item;
+        }
+        else {
+            return allItems[Math.floor(Math.random() * allItems.length)].Item;
+        }
+    }
+}
+
 var getCalories = itemName => {
     try {
         var itemCalories = allItems.findIndex((item) => {
@@ -229,6 +243,7 @@ exports.getBurrito = getBurrito;
 exports.getValue = getValue;
 exports.getVegitarian = getVegitarian;
 exports.getBreakfast = getBreakfast;
+exports.getItem = getItem;
 
 //Descriptive Exports
 exports.getCalories = getCalories;
