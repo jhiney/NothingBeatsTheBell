@@ -1,13 +1,5 @@
 var allItems = require('./menuItems.json');
-var newItems = [];
-var drinks = [];
-var combos = [];
-var tacos = [];
-var entrees = [];
-var burritos = [];
-var valueMenu = [];
-var vegitarian = [];
-var breakfast = [];
+var newItems = [], drinks = [], combos = [], tacos = [], entrees = [], burritos = [], valueMenu = [], vegitarian = [], breakfast = [];
 
 allItems.forEach((item) => {
 
