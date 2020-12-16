@@ -75,8 +75,8 @@ async function start() {
 
 //start();
 
-var newItem = NBTB.getNew();
-console.log(newItem)
-console.log(NBTB.getCalories(newItem))
-console.log(NBTB.getPrice(newItem))
+var taco  = NBTB.getAll();
+console.log(taco)
+//console.log(NBTB.getCalories(taco))
+//console.log(NBTB.getPrice(taco))
 
