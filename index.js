@@ -82,8 +82,18 @@ allItems.forEach((item) => {
 
 var getAll = () => {return allItems}
 
-var getNew = () => {
-    return newItems[Math.floor(Math.random() * newItems.length)].Item;
+var getNew = (itemName = 'nothing') => {
+    if (itemName) {
+        var specificItemIndex = newItems.findIndex((item) => {
+            return item.Item === itemName;
+        })
+        if (specificItemIndex > -1) {
+            return newItems[specificItemIndex].Item;
+        }
+        else {
+            return newItems[Math.floor(Math.random() * newItems.length)].Item;
+        }
+    }
 };
 
 var getTaco = (itemName = 'nothing') => {
@@ -208,7 +218,7 @@ var getPrice = itemName => {
     }
 }
 
-//Module Exports
+//Module Exports----------------------
 
 //Menu Exports
 exports.getNew = getNew;
