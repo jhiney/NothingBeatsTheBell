@@ -88,36 +88,26 @@ allItems.forEach((item) => {
     }
 });
 
-function getNew() {
+var getNew = () => {
     return newItems[Math.floor(Math.random() * newItems.length)].Item;
 };
 
-function getDrink() {
+var getDrink = () => {
     return drinks[Math.floor(Math.random() * newItems.length)].Item;;
 }
 
-function getCalories(itemName) {
-
-    var itemCalories = '';
-    allItems.forEach((item) => {
-        if (item.Item === itemName) {
-            itemCalories = item.Calories
-        }
+var getCalories = itemName => {
+    var itemCalories = allItems.findIndex((item) => {
+         return item.Item === itemName;
     })
-    
-    return itemCalories;
+    return allItems[itemCalories].Calories;
 }
 
-function getPrice(itemName) {
-
-    var itemPrice = '';
-    allItems.forEach((item) => {
-        if (item.Item === itemName) {
-            itemPrice = item.Price
-        }
+var getPrice = itemName => {
+    var itemPrice = allItems.findIndex((item) => {
+        return item.Item === itemName;
     })
-
-    return itemPrice;
+    return allItems[itemPrice].Price;
 }
 
 //module exports

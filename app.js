@@ -159,7 +159,7 @@ async function start() {
     //console.log(order);    
 }
 
-var drink = NBTB.getDrink();
+//var drink = NBTB.getDrink();
 var newItem = NBTB.getNew();
 console.log(newItem)
 console.log(NBTB.getCalories(newItem))
