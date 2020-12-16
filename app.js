@@ -7,19 +7,9 @@ var NBTB = require('./index.js')
 
 //arrays for the different things
 var mainCategories = []
-var subMenuUrls = []
 var subItems = []
 
-var jason = require('./menuItems.json')
-
 //stores all items of a particular submenu to then be placed in an order
-var tempMenu = [];
-
-//this is what will be output. Live Mas
-var order = [];
-
-//string declaration for the random submenu
-var randomSub = '';
 
 //taco bell baseURL
 const baseURL = 'https://www.tacobell.com/food';
@@ -51,17 +41,6 @@ async function mainToJson() {
     }
 }
 
-var getSubMenus = function () {
-    //foreach main category append the base URL and push to an array of the submenus
-    mainCategories.forEach(function (subMenu) {
-        subMenu = subMenu.replace('food/','')
-        subMenu = baseURL + subMenu;
-        subMenuUrls.push(subMenu);
-    })
-
-    //This gets a random submenu, useful for testing
-    randomSub = subMenuUrls[Math.floor(Math.random() * subMenuUrls.length)]; 
-}
 //surl is Sub Menu URL
 async function getItems(surl) {
 
@@ -90,76 +69,12 @@ async function getItems(surl) {
         }, (error) => console.log(error));
 }
 
-async function getDrinks(surl) {
-
-    await axios.get(surl)
-        .then((response) => {
-            if (response.status === 200) {
-                const html = response.data;
-                const $ = cheerio.load(html);
-
-                //shows where it go the items from
-                tempMenu.push(randomSub);
-                //.class #id tag
-                $(".product-card .product-name a").each(function () {
-                    tempMenu.push($(this).text());
-                });
-
-                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
-
-                //clear the temp menu for speed
-                tempMenu = []
-            }
-        }, (error) => console.log(error));
-}
-
-async function getItem(itemMenu) {
-
-    var itemUrl = baseURL + '/' + itemMenu
-
-    await axios.get(itemUrl)
-        .then((response) => {
-            if (response.status === 200) {
-                const html = response.data;
-                const $ = cheerio.load(html);
-
-                $(".product-card .product-name a").each(function() {
-                    tempMenu.push( {
-                        Menu: itemMenu,
-                        Item: $(this).text()
-                    })
-
-                    //tempMenu.push($(this).text());
-                });
-                //add a random item to your order
-                order.push(tempMenu[Math.floor(Math.random() * tempMenu.length)]);
-
-                //clear the temp menu for speed
-                tempMenu = []
-            }
-        }, (error) => console.log(error));
-}
-
 async function start() {
-
-    //await getItem('drinks')
-    //await getItem('tacos')
-
-    /* You need all 3 to use getItems - TODO: Change this so it doesn't require
-    await getMainMenu()
-    await getSubMenus()
-    await getItems(randomSub)
-    */
-
-    //testing
-
-    //await mainToJson()
-    //console.log(jason[1].Item);   
-
-    //console.log(order);    
+    await mainToJson()
 }
 
-//var drink = NBTB.getDrink();
+//start();
+
 var newItem = NBTB.getNew();
 console.log(newItem)
 console.log(NBTB.getCalories(newItem))

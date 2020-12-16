@@ -112,9 +112,6 @@ var getPrice = itemName => {
 
 //module exports
 exports.getNew = getNew;
-
 exports.getDrink = getDrink;
-
 exports.getCalories = getCalories;
-
 exports.getPrice = getPrice;
