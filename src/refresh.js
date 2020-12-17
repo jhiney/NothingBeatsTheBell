@@ -75,14 +75,13 @@ async function start() {
 
 //start();
 
-var myOrder = {
-    mainCourse: order.mainCourse(),
-    Drink: order.drink(),
-    Breakfast: order.breakfast('Breakfast Salsa')
-}
-
+//var myOrder = {
+//    mainCourse: order.mainCourse(),
+//    Drink: order.drink(),
+//    Breakfast: order.breakfast('Breakfast Salsa')
+//}
+var myOrder = NBTB.liveMas();
 
 console.log(myOrder)
-console.log(NBTB.getCalories(myOrder.Drink))
 //console.log(NBTB.getPrice(taco))
 

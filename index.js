@@ -238,6 +238,20 @@ var createOrder  = {
     breakfast: itemName => getBreakfast(itemName)
 };
 
+var liveMas = () => {
+    var mas = {
+        newItem: getNew(),
+        Drink: getDrink(),
+        Taco: getTaco(),
+        Entree: getEntree(),
+        Burrito: getBurrito(),
+        ValueMenu: getValue(),
+        Vegitarian: getVegitarian(),
+        Breakfast: getBreakfast()
+    }
+    return mas;
+}
+
 
 //Module Exports----------------------
 
@@ -251,7 +265,10 @@ exports.getValue = getValue;
 exports.getVegitarian = getVegitarian;
 exports.getBreakfast = getBreakfast;
 exports.getItem = getItem;
+
+//Random Exports
 exports.createOrder = createOrder;
+exports.liveMas = liveMas;
 
 //Descriptive Exports
 exports.getCalories = getCalories;

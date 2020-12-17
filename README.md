@@ -53,6 +53,13 @@ var allItems = NBTB.getAll()
 ]
 ```
 
+Last, but certainly not least, for those who truly want to Live Mas&reg;
+
+```javascript
+var livingMas = NBTB.liveMas();
+```
+
+
 ## Currently Supported Menus
 ```javascript
 //New and rotating items
