@@ -73,15 +73,5 @@ async function start() {
     await mainToJson()
 }
 
-//start();
-
-//var myOrder = {
-//    mainCourse: order.mainCourse(),
-//    Drink: order.drink(),
-//    Breakfast: order.breakfast('Breakfast Salsa')
-//}
-var myOrder = NBTB.liveMas();
-
-console.log(myOrder)
-//console.log(NBTB.getPrice(taco))
+start();
 
