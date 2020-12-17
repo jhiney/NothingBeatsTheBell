@@ -182,14 +182,14 @@ var getBreakfast = (itemName = 'nothing') => {
 
 var getDrink = (itemName = 'nothing') => {
     if (itemName) {
-        var specificItemIndex = entrees.findIndex((item) => {
+        var specificItemIndex = drinks.findIndex((item) => {
             return item.Item === itemName;
         })
         if (specificItemIndex > -1) {
-            return entrees[specificItemIndex].Item;
+            return drinks[specificItemIndex].Item;
         }
         else {
-            return entrees[Math.floor(Math.random() * entrees.length)].Item;
+            return drinks[Math.floor(Math.random() * drinks.length)].Item;
         }
     }
 }
@@ -232,8 +232,10 @@ var getPrice = itemName => {
     }
 }
 
-var liveMas = {
-    method1: itemName => getItem(itemName)
+var createOrder  = {
+    mainCourse: itemName => getEntree(itemName),
+    drink: itemName => getDrink(itemName),
+    breakfast: itemName => getBreakfast(itemName)
 };
 
 
@@ -249,7 +251,7 @@ exports.getValue = getValue;
 exports.getVegitarian = getVegitarian;
 exports.getBreakfast = getBreakfast;
 exports.getItem = getItem;
-exports.liveMas = liveMas;
+exports.createOrder = createOrder;
 
 //Descriptive Exports
 exports.getCalories = getCalories;

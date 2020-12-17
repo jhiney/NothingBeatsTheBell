@@ -4,6 +4,7 @@ let axios = require('axios')
 let fs = require('fs')
 
 var NBTB = require('../index.js')
+var order = NBTB.createOrder;
 
 //arrays for the different things
 var mainCategories = []
@@ -75,8 +76,13 @@ async function start() {
 
 //start();
 
-var taco  = NBTB.liveMas.method1();
-console.log(taco)
+var myOrder = {
+    mainCourse: order.mainCourse(),
+    Drink: order.drink(),
+    Breakfast: order.breakfast('Breakfast Salsa')
+}
+
+console.log(myOrder)
 //console.log(NBTB.getCalories(taco))
 //console.log(NBTB.getPrice(taco))
 
