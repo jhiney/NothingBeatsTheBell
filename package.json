@@ -1,10 +1,23 @@
 {
   "name": "nothing-beats-the-bell",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "NothingBeatsTheBell",
   "main": "index.js",
   "author": {
     "name": "Jhiney"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhiney/NothingBeatsTheBell.git"
+  },
+  "keywords": [
+    "node",
+    "tacos",
+    "taco bell",
+    "food"
+  ],
+  "bugs": {
+    "url": "https://github.com/jhiney/NothingBeatsTheBell/issues"
   },
   "dependencies": {
     "axios": "^0.21.0",
