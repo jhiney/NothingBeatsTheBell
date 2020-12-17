@@ -75,7 +75,7 @@ async function start() {
 
 //start();
 
-var taco  = NBTB.getItem();
+var taco  = NBTB.liveMas.method1();
 console.log(taco)
 //console.log(NBTB.getCalories(taco))
 //console.log(NBTB.getPrice(taco))

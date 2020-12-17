@@ -232,6 +232,11 @@ var getPrice = itemName => {
     }
 }
 
+var liveMas = {
+    method1: itemName => getItem(itemName)
+};
+
+
 //Module Exports----------------------
 
 //Menu Exports
@@ -244,6 +249,7 @@ exports.getValue = getValue;
 exports.getVegitarian = getVegitarian;
 exports.getBreakfast = getBreakfast;
 exports.getItem = getItem;
+exports.liveMas = liveMas;
 
 //Descriptive Exports
 exports.getCalories = getCalories;
