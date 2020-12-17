@@ -62,7 +62,6 @@ async function getItems(surl) {
                     })
                 });           
             }
-            //const menuTrimmed = menuitems.filter(n => n !== undefined)
             fs.writeFile('menuItems.json',
                 JSON.stringify(subItems, null, 4),
                 (err) => console.log('File successfully written!'))
@@ -82,7 +81,8 @@ var myOrder = {
     Breakfast: order.breakfast('Breakfast Salsa')
 }
 
+
 console.log(myOrder)
-//console.log(NBTB.getCalories(taco))
+console.log(NBTB.getCalories(myOrder.Drink))
 //console.log(NBTB.getPrice(taco))
 
