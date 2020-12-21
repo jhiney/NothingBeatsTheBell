@@ -233,9 +233,14 @@ var getPrice = itemName => {
 }
 
 var createOrder  = {
-    mainCourse: itemName => getEntree(itemName),
-    drink: itemName => getDrink(itemName),
-    breakfast: itemName => getBreakfast(itemName)
+    Entree: (itemName = 'nothing') => getEntree(itemName),
+    newItem: (itemName = 'nothing') => getNew(itemName),
+    Drink: (itemName = 'nothing') => getDrink(itemName),
+    Taco: (itemName = 'nothing') => getTaco(itemName),
+    Burrito: (itemName = 'nothing') => getBurrito(itemName),
+    ValueMenu: (itemName = 'nothing') => getValue(itemName),
+    Vegitarian: (itemName = 'nothing') => getVegitarian(itemName),
+    Breakfast: (itemName = 'nothing') => getBreakfast(itemName)
 };
 
 var liveMas = () => {
