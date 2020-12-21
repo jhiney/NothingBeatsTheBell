@@ -53,12 +53,25 @@ var allItems = NBTB.getAll()
 ]
 ```
 
+To create your own "order", feel free to use NBTB's order methods. The naming is the exact same as the [currently supported menus](#currently-supported-menus), without the "get":
+
+```javascript
+var order = NBTB.createOrder;
+
+var myOrder = {
+    Burrito: order.Burrito(),
+    Taco: order.Taco()
+    //etc...
+    
+}
+
+```
+
 Last, but certainly not least, for those who truly want to Live Mas&reg;
 
 ```javascript
 var livingMas = NBTB.liveMas();
 ```
-
 
 ## Currently Supported Menus
 ```javascript
