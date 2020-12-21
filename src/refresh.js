@@ -73,9 +73,4 @@ async function start() {
     await mainToJson()
 }
 
-var myOrder = {
-    Burrito: order.Burrito()
-}
-
-//start();
-console.log(myOrder)
+start()
