@@ -1,6 +1,7 @@
 var allItems = require('./data/menuItems.json');
 var newItems = [], drinks = [], combos = [], tacos = [], entrees = [], burritos = [], valueMenu = [], vegitarian = [], breakfast = [];
 
+//These two loops split up the master menu into their relaitve submenus
 allItems.forEach((item) => {
 
     if (item.Menu === 'new') {
@@ -80,8 +81,10 @@ allItems.forEach((item) => {
     }
 });
 
-var getAll = () => {return allItems}
+//Returns everything
+var getAll = () => { return allItems }
 
+//All the below get% returns a random menu item from the specific menu, unless an item is passed in which case it tries to match the item/
 var getNew = (itemName = 'nothing') => {
     if (itemName) {
         var specificItemIndex = newItems.findIndex((item) => {
@@ -208,6 +211,7 @@ var getItem = (itemName = 'nothing') => {
     }
 }
 
+//Gets the calories of a specified item  - returns and error if the paramters are blank
 var getCalories = itemName => {
     try {
         var itemCalories = allItems.findIndex((item) => {
@@ -220,6 +224,7 @@ var getCalories = itemName => {
     }
 }
 
+//Gets the price of a specified item  - returns and error if the paramters are blank
 var getPrice = itemName => {
     try {
         var itemPrice = allItems.findIndex((item) => {
@@ -232,6 +237,7 @@ var getPrice = itemName => {
     }
 }
 
+//Order "system"
 var createOrder  = {
     Entree: (itemName = 'nothing') => getEntree(itemName),
     newItem: (itemName = 'nothing') => getNew(itemName),
@@ -243,6 +249,7 @@ var createOrder  = {
     Breakfast: (itemName = 'nothing') => getBreakfast(itemName)
 };
 
+//Gets one of every item and returns it as an object
 var liveMas = () => {
     var mas = {
         newItem: getNew(),
