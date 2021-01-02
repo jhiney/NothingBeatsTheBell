@@ -99,4 +99,5 @@ In the `./src` folder is `refresh.js`, running this file will refresh the json f
 It would be unreasonble to assume that they (Taco Bell) will never change the layout or structure of their online menu, so attempts will be made to modify the refresh file to keep it updated. If there comes a time when this is no longer possible, the most recent version of `menuItems.json` will become the last version of `menuItems.json`.
 
 ## TODO
-
+-Simplify files
+-API?
