@@ -10,8 +10,6 @@ var order = NBTB.createOrder;
 var mainCategories = []
 var subItems = []
 
-//stores all items of a particular submenu to then be placed in an order
-
 //taco bell baseURL
 const baseURL = 'https://www.tacobell.com/food';
 const baseURLNoFood = 'https://www.tacobell.com';
