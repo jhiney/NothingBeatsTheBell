@@ -1,5 +1,7 @@
 # Nothing Beats The Bell
 
+[![Downloads](https://badgen.net/npm/dt/nothing-beats-the-bell)](https://www.npmjs.com/package/nothing-beats-the-bell)
+
 A node package made purely for fun, and the desire to Live Mas&reg; in all aspects of life. I make no claims that this is using best practices as I am constantly learning what those are. If you would like to contribute to this package, please let me know.
 
 Install using npm:
@@ -97,8 +99,3 @@ var livingMas = NBTB.liveMas();
 In the `./src` folder is `refresh.js`, running this file will refresh the json file that the module is pulling from. It uses [axios](https://github.com/axios/axios) and [cheerio](https://github.com/cheeriojs/cheerio) to scrape Taco Bell's online menu, found [here](https://www.tacobell.com/food). 
 
 It would be unreasonble to assume that they (Taco Bell) will never change the layout or structure of their online menu, so attempts will be made to modify the refresh file to keep it updated. If there comes a time when this is no longer possible, the most recent version of `menuItems.json` will become the last version of `menuItems.json`.
-
-## TODO
--Simplify files
-
--API?
