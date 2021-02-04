@@ -36,6 +36,18 @@
         "Calories": "250 Cal"
     },
     {
+        "Menu": "new",
+        "Item": "Midnight Berry Freeze",
+        "Price": "$2.79",
+        "Calories": "140-170 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Blue Raspberry Freeze",
+        "Price": "$2.79",
+        "Calories": "120-150 Cal"
+    },
+    {
         "Menu": "online-exclusives",
         "Item": "Quesarito",
         "Price": "$3.39",
@@ -75,13 +87,13 @@
         "Menu": "deals-and-combos",
         "Item": "3 Doritos® Locos Tacos Combo",
         "Price": "$6.99",
-        "Calories": "930 Cal"
+        "Calories": "920 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "2 Chicken Chalupas Supreme Combo",
         "Price": "$8.39",
-        "Calories": "1250 Cal"
+        "Calories": "1240 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -105,7 +117,7 @@
         "Menu": "deals-and-combos",
         "Item": "3 Crunchy Tacos Combo",
         "Price": "$5.79",
-        "Calories": "930 Cal"
+        "Calories": "920 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -117,13 +129,13 @@
         "Menu": "deals-and-combos",
         "Item": "3 Soft Tacos Combo",
         "Price": "$5.79",
-        "Calories": "960 Cal"
+        "Calories": "970 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Soft Tacos Supreme® Combo",
         "Price": "$6.79",
-        "Calories": "1050 Cal"
+        "Calories": "1040 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -135,7 +147,7 @@
         "Menu": "deals-and-combos",
         "Item": "Breakfast Crunchwrap Combo",
         "Price": "$4.99",
-        "Calories": "1110 Cal"
+        "Calories": "1100 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -183,7 +195,7 @@
         "Menu": "tacos",
         "Item": "3 Crunchy Tacos Combo",
         "Price": "$5.79",
-        "Calories": "930 Cal"
+        "Calories": "920 Cal"
     },
     {
         "Menu": "tacos",
@@ -351,7 +363,7 @@
         "Menu": "specialties",
         "Item": "Black Bean Crunchwrap Supreme®",
         "Price": "$3.79",
-        "Calories": "510 Cal"
+        "Calories": "520 Cal"
     },
     {
         "Menu": "specialties",
@@ -471,7 +483,7 @@
         "Menu": "sides-sweets",
         "Item": "Cinnabon Delights® 12 Pack",
         "Price": "$5.19",
-        "Calories": "80 Cal"
+        "Calories": "930 Cal"
     },
     {
         "Menu": "sides-sweets",
@@ -498,16 +510,46 @@
         "Calories": "0 Cal"
     },
     {
-        "Menu": "drinks",
-        "Item": "Dragon Fruit Freeze",
-        "Price": "$2.79",
-        "Calories": "190-230 Cal"
+        "Menu": "sides-sweets",
+        "Item": "Spork",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Cup Lid",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Napkin",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Straw",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
-        "Item": "Dragon Fruit Freeze No Syrup",
+        "Item": "Happier Hour® Beverage",
+        "Price": "$1.00",
+        "Calories": "280 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Midnight Berry Freeze",
         "Price": "$2.79",
-        "Calories": "160-200 Cal"
+        "Calories": "140-170 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Blue Raspberry Freeze",
+        "Price": "$2.79",
+        "Calories": "120-150 Cal"
     },
     {
         "Menu": "drinks",
@@ -519,84 +561,84 @@
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast® Freeze",
         "Price": "$2.79",
-        "Calories": "150-190 Cal"
+        "Calories": "160-190 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Fountain Drink",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Diet Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi® Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "220-410 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "220-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Baja Blast™ Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "5-15 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Kickstart™ Orange Citrus",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "70-130 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Sierra Mist®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "G2 Gatorade® Fruit Punch",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "30-50 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Tropicana® Pink Lemonade",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "210-390 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Brisk® Mango Fiesta",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "100-180 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Lipton® Unsweetened Iced Tea",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
     },
     {
@@ -616,12 +658,6 @@
         "Item": "Cup of Water",
         "Price": "$0.00",
         "Calories": "0 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Happier Hour® Beverage",
-        "Price": "$1.00",
-        "Calories": "280 Cal"
     },
     {
         "Menu": "party-packs",
@@ -645,7 +681,7 @@
         "Menu": "party-packs",
         "Item": "Variety Taco Party Pack",
         "Price": "$15.99",
-        "Calories": "170 Cal  Per Item"
+        "Calories": "170-170 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
@@ -723,7 +759,7 @@
         "Menu": "vegetarian",
         "Item": "Black Bean Crunchwrap Supreme®",
         "Price": "$3.79",
-        "Calories": "510 Cal"
+        "Calories": "520 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -783,7 +819,7 @@
         "Menu": "vegetarian",
         "Item": "Cinnabon Delights® 12 Pack",
         "Price": "$5.19",
-        "Calories": "80 Cal"
+        "Calories": "930 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -825,7 +861,7 @@
         "Menu": "breakfast",
         "Item": "Hash Brown Toasted Breakfast Burrito",
         "Price": "$1.99",
-        "Calories": "570 Cal"
+        "Calories": "580 Cal"
     },
     {
         "Menu": "breakfast",
@@ -861,7 +897,7 @@
         "Menu": "breakfast",
         "Item": "Breakfast Crunchwrap Combo",
         "Price": "$4.99",
-        "Calories": "1110 Cal"
+        "Calories": "1100 Cal"
     },
     {
         "Menu": "breakfast",
@@ -879,7 +915,7 @@
         "Menu": "breakfast",
         "Item": "Cinnabon Delights® 12 Pack",
         "Price": "$5.19",
-        "Calories": "80 Cal"
+        "Calories": "930 Cal"
     },
     {
         "Menu": "breakfast",
