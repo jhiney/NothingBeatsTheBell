@@ -3,9 +3,6 @@ var cheerio = require('cheerio');
 let axios = require('axios')
 let fs = require('fs')
 
-var NBTB = require('../index.js')
-var order = NBTB.createOrder;
-
 //arrays for the different things
 var mainCategories = []
 var subItems = []
@@ -15,7 +12,6 @@ const baseURL = 'https://www.tacobell.com/food';
 const baseURLNoFood = 'https://www.tacobell.com';
 
 async function getMainMenu() {
-
     await axios.get(baseURL)
         .then((response) => {
             if (response.status === 200) {
@@ -42,9 +38,7 @@ async function mainToJson() {
 
 //surl is Sub Menu URL
 async function getItems(surl) {
-
     var menu = surl.replace('https://www.tacobell.com/food/', '')
-     
     await axios.get(surl)
         .then((response) => {
             if (response.status === 200) {

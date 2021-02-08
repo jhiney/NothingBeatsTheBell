@@ -263,8 +263,6 @@ var liveMas = () => {
     }
     return mas;
 }
-
-//TODO: If you have an order or you choose to Live Mas - add something that wil sum up the price and the calories so you know how bad your decision was...
 //TODO: Make the exports a little cleaner
 
 //Module Exports----------------------
