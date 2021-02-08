@@ -3,9 +3,6 @@ var cheerio = require('cheerio');
 let axios = require('axios')
 let fs = require('fs')
 
-var NBTB = require('../index.js')
-var order = NBTB.createOrder;
-
 //arrays for the different things
 var mainCategories = []
 var subItems = []
