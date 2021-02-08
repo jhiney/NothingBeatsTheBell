@@ -15,7 +15,6 @@ const baseURL = 'https://www.tacobell.com/food';
 const baseURLNoFood = 'https://www.tacobell.com';
 
 async function getMainMenu() {
-
     await axios.get(baseURL)
         .then((response) => {
             if (response.status === 200) {
@@ -42,9 +41,7 @@ async function mainToJson() {
 
 //surl is Sub Menu URL
 async function getItems(surl) {
-
     var menu = surl.replace('https://www.tacobell.com/food/', '')
-     
     await axios.get(surl)
         .then((response) => {
             if (response.status === 200) {
