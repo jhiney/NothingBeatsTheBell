@@ -55,7 +55,7 @@ var allItems = NBTB.getAll()
 ]
 ```
 
-To create your own "order", feel free to use NBTB's order methods. The naming is the exact same as the [currently supported menus](#currently-supported-menus), without the "get":
+To create your own "order" there is a `creatOrder` method to utilize. The naming is the exact same as the [currently supported menus](#currently-supported-menus), without the "get":
 
 ```javascript
 var order = NBTB.createOrder;
