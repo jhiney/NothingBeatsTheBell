@@ -1,6 +1,12 @@
 [
     {
         "Menu": "new",
+        "Item": "My Cravings Box",
+        "Price": "$5.00",
+        "Calories": "670-1660 Cal"
+    },
+    {
+        "Menu": "new",
         "Item": "Nacho Fries Box",
         "Price": "$5.00",
         "Calories": "1260 Cal"
@@ -49,6 +55,12 @@
     },
     {
         "Menu": "online-exclusives",
+        "Item": "My Cravings Box",
+        "Price": "$5.00",
+        "Calories": "670-1660 Cal"
+    },
+    {
+        "Menu": "online-exclusives",
         "Item": "Quesarito",
         "Price": "$3.39",
         "Calories": "650 Cal"
@@ -64,6 +76,12 @@
         "Item": "Black Bean Chalupa",
         "Price": "$3.29",
         "Calories": "330 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "My Cravings Box",
+        "Price": "$5.00",
+        "Calories": "670-1660 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -535,12 +553,6 @@
     },
     {
         "Menu": "drinks",
-        "Item": "Happier Hour® Beverage",
-        "Price": "$1.00",
-        "Calories": "280 Cal"
-    },
-    {
-        "Menu": "drinks",
         "Item": "Midnight Berry Freeze",
         "Price": "$2.79",
         "Calories": "140-170 Cal"
@@ -566,79 +578,79 @@
     {
         "Menu": "drinks",
         "Item": "Fountain Drink",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "0-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Diet Pepsi®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi® Zero Sugar",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "220-410 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "220-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Baja Blast™ Zero Sugar",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "5-15 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Kickstart™ Orange Citrus",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "70-130 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Sierra Mist®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "G2 Gatorade® Fruit Punch",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "30-50 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Tropicana® Pink Lemonade",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "210-390 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Brisk® Mango Fiesta",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "100-180 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Lipton® Unsweetened Iced Tea",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "0 Cal"
     },
     {
@@ -658,6 +670,12 @@
         "Item": "Cup of Water",
         "Price": "$0.00",
         "Calories": "0 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Happier Hour® Beverage",
+        "Price": "$1.00",
+        "Calories": "280 Cal"
     },
     {
         "Menu": "party-packs",
