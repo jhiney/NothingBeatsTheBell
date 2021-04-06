@@ -3,61 +3,73 @@
         "Menu": "new",
         "Item": "My Cravings Box",
         "Price": "$5.00",
-        "Calories": "670-1660 Cal"
+        "Calories": "670-1670 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Nacho Fries Box",
-        "Price": "$5.00",
-        "Calories": "1260 Cal"
-    },
-    {
-        "Menu": "new",
-        "Item": "Nacho Fries BellGrande®",
+        "Item": "Quesalupa",
         "Price": "$3.49",
-        "Calories": "710 Cal"
+        "Calories": "610 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Nacho Fries",
-        "Price": "$1.39",
-        "Calories": "320 Cal"
+        "Item": "Quesalupa Black Bean",
+        "Price": "$3.49",
+        "Calories": "590 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Bacon Club Chalupa Combo",
+        "Item": "Quesalupa Combo",
         "Price": "$5.99",
-        "Calories": "1200 Cal"
+        "Calories": "1360 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Bacon Club Chalupa",
-        "Price": "$3.49",
-        "Calories": "440 Cal"
+        "Item": "Chalupa Cravings Box",
+        "Price": "$5.00",
+        "Calories": "1340 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Loaded Nacho Taco",
+        "Item": "Spicy Potato Soft Taco",
         "Price": "$1.00",
-        "Calories": "250 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Midnight Berry Freeze",
-        "Price": "$2.79",
-        "Calories": "140-170 Cal"
+        "Item": "Cheesy Fiesta Potatoes",
+        "Price": "$1.49",
+        "Calories": "230 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Blue Raspberry Freeze",
+        "Item": "Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "2050 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Veggie Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "1770 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Wild Strawberry Lemonade Freeze",
         "Price": "$2.79",
-        "Calories": "120-150 Cal"
+        "Calories": "180-220 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Drinks Party Pack",
+        "Price": "$4.00",
+        "Calories": "1120 Cal"
     },
     {
         "Menu": "online-exclusives",
         "Item": "My Cravings Box",
         "Price": "$5.00",
-        "Calories": "670-1660 Cal"
+        "Calories": "670-1670 Cal"
     },
     {
         "Menu": "online-exclusives",
@@ -79,21 +91,39 @@
     },
     {
         "Menu": "deals-and-combos",
+        "Item": "Breakfast Crunchwrap Combo",
+        "Price": "$4.99",
+        "Calories": "1100 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
+        "Price": "$4.19",
+        "Calories": "1010 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo",
+        "Price": "$4.99",
+        "Calories": "1000 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
         "Item": "My Cravings Box",
         "Price": "$5.00",
-        "Calories": "670-1660 Cal"
+        "Calories": "670-1670 Cal"
     },
     {
         "Menu": "deals-and-combos",
-        "Item": "Nacho Fries Box",
-        "Price": "$5.00",
-        "Calories": "1260 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Bacon Club Chalupa Combo",
+        "Item": "Quesalupa Combo",
         "Price": "$5.99",
-        "Calories": "1200 Cal"
+        "Calories": "1360 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Chalupa Cravings Box",
+        "Price": "$5.00",
+        "Calories": "1340 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -162,34 +192,16 @@
         "Calories": "1000 Cal"
     },
     {
-        "Menu": "deals-and-combos",
-        "Item": "Breakfast Crunchwrap Combo",
-        "Price": "$4.99",
-        "Calories": "1100 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
-        "Price": "$4.19",
-        "Calories": "1010 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Grande Toasted Breakfast Burrito Combo",
-        "Price": "$4.99",
-        "Calories": "1000 Cal"
-    },
-    {
         "Menu": "tacos",
-        "Item": "Loaded Nacho Taco",
-        "Price": "$1.00",
-        "Calories": "250 Cal"
-    },
-    {
-        "Menu": "tacos",
-        "Item": "Bacon Club Chalupa",
+        "Item": "Quesalupa",
         "Price": "$3.49",
-        "Calories": "440 Cal"
+        "Calories": "610 Cal"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Quesalupa Black Bean",
+        "Price": "$3.49",
+        "Calories": "590 Cal"
     },
     {
         "Menu": "tacos",
@@ -301,15 +313,15 @@
     },
     {
         "Menu": "nachos",
-        "Item": "Nacho Fries BellGrande®",
-        "Price": "$3.49",
-        "Calories": "710 Cal"
+        "Item": "Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "2050 Cal"
     },
     {
         "Menu": "nachos",
-        "Item": "Nacho Fries",
-        "Price": "$1.39",
-        "Calories": "320 Cal"
+        "Item": "Veggie Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "1770 Cal"
     },
     {
         "Menu": "nachos",
@@ -367,9 +379,21 @@
     },
     {
         "Menu": "specialties",
-        "Item": "Bacon Club Chalupa",
+        "Item": "Quesalupa",
         "Price": "$3.49",
-        "Calories": "440 Cal"
+        "Calories": "610 Cal"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Quesalupa Black Bean",
+        "Price": "$3.49",
+        "Calories": "590 Cal"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Cheesy Fiesta Potatoes",
+        "Price": "$1.49",
+        "Calories": "230 Cal"
     },
     {
         "Menu": "specialties",
@@ -475,6 +499,12 @@
     },
     {
         "Menu": "sides-sweets",
+        "Item": "Cheesy Fiesta Potatoes",
+        "Price": "$1.49",
+        "Calories": "230 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
         "Item": "Black Beans",
         "Price": "$1.49",
         "Calories": "50 Cal"
@@ -505,6 +535,54 @@
     },
     {
         "Menu": "sides-sweets",
+        "Item": "Guacamole",
+        "Price": "$0.50",
+        "Calories": "70 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Reduced Fat Sour Cream",
+        "Price": "$0.50",
+        "Calories": "45 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Creamy Jalapeño Sauce",
+        "Price": "$0.35",
+        "Calories": "230 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Nacho Cheese Sauce",
+        "Price": "$0.65",
+        "Calories": "60 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Red Sauce",
+        "Price": "$0.25",
+        "Calories": "20 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Avocado Ranch Sauce",
+        "Price": "$0.35",
+        "Calories": "240 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Chipotle Sauce",
+        "Price": "$0.35",
+        "Calories": "220 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
+        "Item": "Spicy Ranch",
+        "Price": "$0.30",
+        "Calories": "220 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
         "Item": "Mild Sauce Packet",
         "Price": "$0.00",
         "Calories": "0 Cal"
@@ -529,6 +607,12 @@
     },
     {
         "Menu": "sides-sweets",
+        "Item": "Straw",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sides-sweets",
         "Item": "Spork",
         "Price": "$0.00",
         "Calories": "0 Cal"
@@ -546,16 +630,10 @@
         "Calories": "0 Cal"
     },
     {
-        "Menu": "sides-sweets",
-        "Item": "Straw",
-        "Price": "$0.00",
-        "Calories": "0 Cal"
-    },
-    {
         "Menu": "drinks",
-        "Item": "Midnight Berry Freeze",
+        "Item": "Wild Strawberry Lemonade Freeze",
         "Price": "$2.79",
-        "Calories": "140-170 Cal"
+        "Calories": "180-220 Cal"
     },
     {
         "Menu": "drinks",
@@ -573,7 +651,7 @@
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast® Freeze",
         "Price": "$2.79",
-        "Calories": "160-190 Cal"
+        "Calories": "160-230 Cal"
     },
     {
         "Menu": "drinks",
@@ -673,9 +751,33 @@
     },
     {
         "Menu": "drinks",
-        "Item": "Happier Hour® Beverage",
-        "Price": "$1.00",
-        "Calories": "280 Cal"
+        "Item": "Dr Pepper®",
+        "Price": "$1.99",
+        "Calories": "190-360 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Drinks Party Pack",
+        "Price": "$4.00",
+        "Calories": "1120 Cal"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "2050 Cal"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Veggie Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "1770 Cal"
+    },
+    {
+        "Menu": "party-packs",
+        "Item": "Drinks Party Pack",
+        "Price": "$4.00",
+        "Calories": "1120 Cal"
     },
     {
         "Menu": "party-packs",
@@ -721,9 +823,9 @@
     },
     {
         "Menu": "cravings-value-menu",
-        "Item": "Loaded Nacho Taco",
+        "Item": "Spicy Potato Soft Taco",
         "Price": "$1.00",
-        "Calories": "250 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "cravings-value-menu",
@@ -760,6 +862,30 @@
         "Item": "Cinnamon Twists",
         "Price": "$1.00",
         "Calories": "170 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Quesalupa Black Bean",
+        "Price": "$3.49",
+        "Calories": "590 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Veggie Nachos Party Pack",
+        "Price": "$9.99",
+        "Calories": "1770 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Spicy Potato Soft Taco",
+        "Price": "$1.00",
+        "Calories": "240 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Cheesy Fiesta Potatoes",
+        "Price": "$1.49",
+        "Calories": "230 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -944,6 +1070,138 @@
     {
         "Menu": "breakfast",
         "Item": "Breakfast Salsa",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Cheesy Fiesta Potatoes",
+        "Price": "$1.49",
+        "Calories": "230 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Black Beans",
+        "Price": "$1.49",
+        "Calories": "50 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Black Beans and Rice",
+        "Price": "$1.49",
+        "Calories": "170 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Cinnamon Twists",
+        "Price": "$1.00",
+        "Calories": "170 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Cinnabon Delights® 2 Pack",
+        "Price": "$1.29",
+        "Calories": "160 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Cinnabon Delights® 12 Pack",
+        "Price": "$5.19",
+        "Calories": "930 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Guacamole",
+        "Price": "$0.50",
+        "Calories": "70 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Reduced Fat Sour Cream",
+        "Price": "$0.50",
+        "Calories": "45 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Creamy Jalapeño Sauce",
+        "Price": "$0.35",
+        "Calories": "230 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Nacho Cheese Sauce",
+        "Price": "$0.65",
+        "Calories": "60 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Red Sauce",
+        "Price": "$0.25",
+        "Calories": "20 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Avocado Ranch Sauce",
+        "Price": "$0.35",
+        "Calories": "240 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Chipotle Sauce",
+        "Price": "$0.35",
+        "Calories": "220 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Spicy Ranch",
+        "Price": "$0.30",
+        "Calories": "220 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Mild Sauce Packet",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Hot Sauce Packet",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Fire Sauce Packet",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Diablo Sauce Packet",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Straw",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Spork",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Cup Lid",
+        "Price": "$0.00",
+        "Calories": "0 Cal"
+    },
+    {
+        "Menu": "sweets",
+        "Item": "Napkin",
         "Price": "$0.00",
         "Calories": "0 Cal"
     }
