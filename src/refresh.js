@@ -4,7 +4,7 @@ let axios = require("axios");
 let fs = require("fs");
 
 //arrays for the different things
-var startingOff = []
+var firstFilter = [];
 var mainCategories = [];
 var subItems = [];
 
@@ -18,30 +18,39 @@ async function getMainMenu() {
       if (response.status === 200) {
         const html = response.data;
         const $ = cheerio.load(html);
-  
+        
+        //Grab the href in each <a> tag on the page
         const item = [];
         $("a").each(function () {
           item.push($(this).attr("href"));
         });
+        
+        //remove all the unneccessary href that don't link to submenus
         item.forEach((e) => {
           if (e.startsWith("/food/")) {
-            startingOff.push(e);
+            firstFilter.push(e);
           }
         });
-  
-        startingOff.forEach((e) => {
-            if ((e.match(new RegExp("/", "g")) || []).length > 2) {
-            } else {
-              mainCategories.push(e);
-            }
-          });
-        }
-        function onlyUnique(value, index, self) {
-          return self.indexOf(value) === index;
-        }
-        mainCategories  = mainCategories.filter(onlyUnique); 
-      },
-      (error) => console.log(error)
+        
+        /**
+         * This filters out any href with more than 2 '/' because that means they link to specific items and not submenus
+         * TODO #9: Edit RegEx to not need the "else"
+         */
+        firstFilter.forEach((e) => {
+          if ((e.match(new RegExp("/", "g")) || []).length > 2) {
+          } else {
+            mainCategories.push(e);
+          }
+        });
+      }
+
+      //Filter for only unique submenus - some are repeated on the homepage for some reason
+      function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+      }
+      mainCategories = mainCategories.filter(onlyUnique);
+    },
+    (error) => console.log(error)
   );
 }
 
@@ -51,7 +60,6 @@ async function mainToJson() {
   for (var categories of mainCategories) {
     categories = baseURLNoFood + categories;
     await getItems(categories);
-    //console.log(categories)
   }
 }
 
@@ -76,7 +84,7 @@ async function getItems(surl) {
 
       fs.writeFile("menuItems.json", JSON.stringify(subItems, null, 4), (err) =>
         console.log("File successfully written!")
-     );
+      );
     },
     (error) => console.log(error)
   );

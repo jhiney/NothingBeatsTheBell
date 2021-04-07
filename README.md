@@ -94,10 +94,11 @@ var livingMas = NBTB.liveMas();
 //Breakfast Items
 .getBreakfast()
 ```
-## Refreshing the Menu (as of 04/06/21) 
+## Refreshing the Menu (as of 04/07/21) 
 
 In the `./src` folder is `refresh.js`, running this file will refresh the json file that the module is pulling from. It uses [axios](https://github.com/axios/axios) and [cheerio](https://github.com/cheeriojs/cheerio) to scrape Taco Bell's online menu, found [here](https://www.tacobell.com/food). 
 
-~~It would be unreasonble to assume that they (Taco Bell) will never change the layout or structure of their online menu, so attempts will be made to modify the refresh file to keep it updated. If there comes a time when this is no longer possible, the most recent version of `menuItems.json` will become the last version of `menuItems.json`.~~
+It would be unreasonble to assume that they (Taco Bell) will never change the layout or structure of their online menu, so attempts will be made to modify the refresh file to keep it updated. If there comes a time when this is no longer possible, the most recent version of `menuItems.json` will become the last version of `menuItems.json`. 
 
-The inevitable happened. Taco Bell updated their menu and now the scraper now longer grabs the menu items. I hope to update this in the future but as of now, there will be no more menu updates.
+04/07/21 - Retooled the scraper to fix the issue of the class tag on main menu items changing. `refresh.js` is now working again like expected.
+
