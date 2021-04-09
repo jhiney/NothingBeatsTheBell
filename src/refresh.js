@@ -18,27 +18,22 @@ async function getMainMenu() {
       if (response.status === 200) {
         const html = response.data;
         const $ = cheerio.load(html);
-        
+
         //Grab the href in each <a> tag on the page
         const item = [];
         $("a").each(function () {
           item.push($(this).attr("href"));
         });
-        
+
         //remove all the unneccessary href that don't link to submenus
         item.forEach((e) => {
           if (e.startsWith("/food/")) {
             firstFilter.push(e);
           }
         });
-        
-        /**
-         * This filters out any href with more than 2 '/' because that means they link to specific items and not submenus
-         * TODO #9: Edit RegEx to not need the "else"
-         */
+
         firstFilter.forEach((e) => {
-          if ((e.match(new RegExp("/", "g")) || []).length > 2) {
-          } else {
+          if ((e.match(new RegExp("/", "g")) || []).length <= 2) {
             mainCategories.push(e);
           }
         });
