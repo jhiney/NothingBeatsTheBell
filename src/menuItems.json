@@ -91,24 +91,6 @@
     },
     {
         "Menu": "deals-and-combos",
-        "Item": "Breakfast Crunchwrap Combo",
-        "Price": "$4.99",
-        "Calories": "1100 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
-        "Price": "$4.19",
-        "Calories": "1010 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Grande Toasted Breakfast Burrito Combo",
-        "Price": "$4.99",
-        "Calories": "1000 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
         "Item": "My Cravings Box",
         "Price": "$5.00",
         "Calories": "670-1670 Cal"
@@ -189,6 +171,24 @@
         "Menu": "deals-and-combos",
         "Item": "Burrito Supreme® Combo",
         "Price": "$6.49",
+        "Calories": "1000 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Breakfast Crunchwrap Combo",
+        "Price": "$4.99",
+        "Calories": "1100 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
+        "Price": "$4.19",
+        "Calories": "1010 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo",
+        "Price": "$4.99",
         "Calories": "1000 Cal"
     },
     {
@@ -284,31 +284,31 @@
     {
         "Menu": "burritos",
         "Item": "Bean Burrito",
-        "Price": "$1.29",
+        "Price": "$1.79",
         "Calories": "350 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Beefy 5-Layer Burrito",
-        "Price": "$2.49",
+        "Price": "$2.99",
         "Calories": "490 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Quesarito",
-        "Price": "$3.39",
+        "Price": "$3.79",
         "Calories": "650 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Burrito Supreme®",
-        "Price": "$3.69",
+        "Price": "$3.99",
         "Calories": "390 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Crunchwrap Supreme®",
-        "Price": "$3.79",
+        "Price": "$4.59",
         "Calories": "530 Cal"
     },
     {
@@ -865,6 +865,12 @@
     },
     {
         "Menu": "vegetarian",
+        "Item": "Hash Brown",
+        "Price": "$1.29",
+        "Calories": "160 Cal"
+    },
+    {
+        "Menu": "vegetarian",
         "Item": "Quesalupa Black Bean",
         "Price": "$3.49",
         "Calories": "590 Cal"
@@ -964,12 +970,6 @@
         "Item": "Cinnabon Delights® 12 Pack",
         "Price": "$5.19",
         "Calories": "930 Cal"
-    },
-    {
-        "Menu": "vegetarian",
-        "Item": "Hash Brown",
-        "Price": "$1.29",
-        "Calories": "160 Cal"
     },
     {
         "Menu": "power-menu",
