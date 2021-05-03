@@ -31,6 +31,12 @@
     },
     {
         "Menu": "new",
+        "Item": "Beefy Potato-Rito",
+        "Price": "$1.00",
+        "Calories": "420 Cal"
+    },
+    {
+        "Menu": "new",
         "Item": "Spicy Potato Soft Taco",
         "Price": "$1.00",
         "Calories": "240 Cal"
@@ -88,6 +94,24 @@
         "Item": "Black Bean Chalupa",
         "Price": "$3.29",
         "Calories": "330 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Breakfast Crunchwrap Combo",
+        "Price": "$4.99",
+        "Calories": "1110 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
+        "Price": "$4.19",
+        "Calories": "1020 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo",
+        "Price": "$4.99",
+        "Calories": "1000 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -171,24 +195,6 @@
         "Menu": "deals-and-combos",
         "Item": "Burrito Supreme® Combo",
         "Price": "$6.49",
-        "Calories": "1000 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Breakfast Crunchwrap Combo",
-        "Price": "$4.99",
-        "Calories": "1100 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
-        "Price": "$4.19",
-        "Calories": "1010 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Grande Toasted Breakfast Burrito Combo",
-        "Price": "$4.99",
         "Calories": "1000 Cal"
     },
     {
@@ -284,32 +290,38 @@
     {
         "Menu": "burritos",
         "Item": "Bean Burrito",
-        "Price": "$1.79",
+        "Price": "$1.29",
         "Calories": "350 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Beefy 5-Layer Burrito",
-        "Price": "$2.99",
+        "Price": "$2.49",
         "Calories": "490 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Quesarito",
-        "Price": "$3.79",
+        "Price": "$3.39",
         "Calories": "650 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Burrito Supreme®",
-        "Price": "$3.99",
+        "Price": "$3.69",
         "Calories": "390 Cal"
     },
     {
         "Menu": "burritos",
         "Item": "Crunchwrap Supreme®",
-        "Price": "$4.59",
+        "Price": "$3.79",
         "Calories": "530 Cal"
+    },
+    {
+        "Menu": "burritos",
+        "Item": "Beefy Potato-Rito",
+        "Price": "$1.00",
+        "Calories": "420 Cal"
     },
     {
         "Menu": "nachos",
@@ -751,12 +763,6 @@
     },
     {
         "Menu": "drinks",
-        "Item": "Dr Pepper®",
-        "Price": "$1.99",
-        "Calories": "190-360 Cal"
-    },
-    {
-        "Menu": "drinks",
         "Item": "Drinks Party Pack",
         "Price": "$4.00",
         "Calories": "1120 Cal"
@@ -823,6 +829,12 @@
     },
     {
         "Menu": "cravings-value-menu",
+        "Item": "Beefy Potato-Rito",
+        "Price": "$1.00",
+        "Calories": "420 Cal"
+    },
+    {
+        "Menu": "cravings-value-menu",
         "Item": "Spicy Potato Soft Taco",
         "Price": "$1.00",
         "Calories": "240 Cal"
@@ -862,12 +874,6 @@
         "Item": "Cinnamon Twists",
         "Price": "$1.00",
         "Calories": "170 Cal"
-    },
-    {
-        "Menu": "vegetarian",
-        "Item": "Hash Brown",
-        "Price": "$1.29",
-        "Calories": "160 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -972,6 +978,12 @@
         "Calories": "930 Cal"
     },
     {
+        "Menu": "vegetarian",
+        "Item": "Hash Brown",
+        "Price": "$1.29",
+        "Calories": "160 Cal"
+    },
+    {
         "Menu": "power-menu",
         "Item": "Power Menu Bowl",
         "Price": "$5.69",
@@ -1011,7 +1023,7 @@
         "Menu": "breakfast",
         "Item": "Hash Brown Toasted Breakfast Burrito Combo",
         "Price": "$4.19",
-        "Calories": "1010 Cal"
+        "Calories": "1020 Cal"
     },
     {
         "Menu": "breakfast",
@@ -1041,7 +1053,7 @@
         "Menu": "breakfast",
         "Item": "Breakfast Crunchwrap Combo",
         "Price": "$4.99",
-        "Calories": "1100 Cal"
+        "Calories": "1110 Cal"
     },
     {
         "Menu": "breakfast",
