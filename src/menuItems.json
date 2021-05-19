@@ -97,24 +97,6 @@
     },
     {
         "Menu": "deals-and-combos",
-        "Item": "Breakfast Crunchwrap Combo",
-        "Price": "$4.99",
-        "Calories": "1110 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
-        "Price": "$4.19",
-        "Calories": "1020 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Grande Toasted Breakfast Burrito Combo",
-        "Price": "$4.99",
-        "Calories": "1000 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
         "Item": "My Cravings Box",
         "Price": "$5.00",
         "Calories": "670-1670 Cal"
@@ -198,6 +180,24 @@
         "Calories": "1000 Cal"
     },
     {
+        "Menu": "deals-and-combos",
+        "Item": "Breakfast Crunchwrap Combo",
+        "Price": "$4.99",
+        "Calories": "1110 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
+        "Price": "$4.19",
+        "Calories": "1020 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo",
+        "Price": "$4.99",
+        "Calories": "1000 Cal"
+    },
+    {
         "Menu": "tacos",
         "Item": "Quesalupa",
         "Price": "$3.49",
@@ -229,15 +229,15 @@
     },
     {
         "Menu": "tacos",
-        "Item": "3 Crunchy Tacos Combo",
-        "Price": "$5.79",
-        "Calories": "920 Cal"
-    },
-    {
-        "Menu": "tacos",
         "Item": "Crunchy Taco Supreme®",
         "Price": "$1.79",
         "Calories": "190 Cal"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "3 Crunchy Tacos Combo",
+        "Price": "$5.79",
+        "Calories": "920 Cal"
     },
     {
         "Menu": "tacos",
@@ -668,80 +668,98 @@
     {
         "Menu": "drinks",
         "Item": "Fountain Drink",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Diet Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi® Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "220-410 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "220-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Baja Blast™ Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "5-15 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Kickstart™ Orange Citrus",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "70-130 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Sierra Mist®",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "G2 Gatorade® Fruit Punch",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "30-50 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Tropicana® Pink Lemonade",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "210-390 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Brisk® Mango Fiesta",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "100-180 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Lipton® Unsweetened Iced Tea",
-        "Price": "$1.99",
+        "Price": "$1.89",
         "Calories": "0 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Dr Pepper®",
+        "Price": "$1.89",
+        "Calories": "190-360 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Drinks Party Pack",
+        "Price": "$4.00",
+        "Calories": "1120 Cal"
+    },
+    {
+        "Menu": "drinks",
+        "Item": "Orange Juice",
+        "Price": "$1.99",
+        "Calories": "140 Cal"
     },
     {
         "Menu": "drinks",
@@ -760,12 +778,6 @@
         "Item": "Cup of Water",
         "Price": "$0.00",
         "Calories": "0 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Drinks Party Pack",
-        "Price": "$4.00",
-        "Calories": "1120 Cal"
     },
     {
         "Menu": "party-packs",
