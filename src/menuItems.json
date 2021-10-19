@@ -1,99 +1,135 @@
 [
     {
         "Menu": "new",
-        "Item": "Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
+        "Item": "Cantina Crispy Melt Taco",
+        "Price": "$2.19",
         "Calories": "280 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Spicy Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
-        "Calories": "290 Cal"
+        "Item": "Black Bean Cantina Crispy Melt Taco",
+        "Price": "$2.19",
+        "Calories": "260 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Crispy Chicken Sandwich Taco Box",
-        "Price": "$5.49",
-        "Calories": "940-1220 Cal"
-    },
-    {
-        "Menu": "new",
-        "Item": "Chalupa Cravings Box",
+        "Item": "Cantina Crispy Melt Taco Box",
         "Price": "$5.00",
-        "Calories": "1060-1340 Cal"
+        "Calories": "800-1080 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Wild Strawberry Lemonade Freeze",
-        "Price": "$2.79",
-        "Calories": "180-220 Cal"
+        "Item": "Cheesy Gordita Crunch",
+        "Price": "$3.99",
+        "Calories": "500 Cal"
     },
     {
         "Menu": "new",
-        "Item": "Blue Raspberry Lemonade Freeze",
-        "Price": "$2.99",
+        "Item": "Doritos® Cheesy Gordita Crunch - Nacho Cheese",
+        "Price": "$4.19",
+        "Calories": "490 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Cheesy Gordita Crunch Combo",
+        "Price": "$6.99",
+        "Calories": "830-1250 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Deluxe Cravings Box",
+        "Price": "$6.99",
+        "Calories": "1220-1500 Cal"
+    },
+    {
+        "Menu": "new",
+        "Item": "Cherry Twilight Freeze",
+        "Price": "$2.89",
         "Calories": "150-180 Cal"
     },
     {
         "Menu": "online-exclusives",
         "Item": "My Cravings Box",
         "Price": "$5.00",
-        "Calories": "670-1670 Cal"
+        "Calories": "680-1680 Cal"
     },
     {
         "Menu": "online-exclusives",
         "Item": "Quesarito",
-        "Price": "$3.39",
-        "Calories": "650 Cal"
+        "Price": "$3.59",
+        "Calories": "640 Cal"
     },
     {
         "Menu": "online-exclusives",
         "Item": "Black Bean Quesarito",
-        "Price": "$3.29",
+        "Price": "$3.49",
         "Calories": "630 Cal"
     },
     {
         "Menu": "online-exclusives",
         "Item": "Black Bean Chalupa",
         "Price": "$3.29",
-        "Calories": "330 Cal"
+        "Calories": "340 Cal"
     },
     {
         "Menu": "deals-and-combos",
-        "Item": "Crispy Chicken Sandwich Taco Box",
-        "Price": "$5.49",
-        "Calories": "940-1220 Cal"
+        "Item": "Breakfast Crunchwrap Combo",
+        "Price": "$5.39",
+        "Calories": "830-1110 Cal"
     },
     {
         "Menu": "deals-and-combos",
-        "Item": "Chalupa Cravings Box",
+        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
+        "Price": "$4.49",
+        "Calories": "730-1010 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Grande Toasted Breakfast Burrito Combo",
+        "Price": "$5.29",
+        "Calories": "720-1000 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Cantina Crispy Melt Taco Box",
         "Price": "$5.00",
-        "Calories": "1060-1340 Cal"
+        "Calories": "800-1080 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Cheesy Gordita Crunch Combo",
+        "Price": "$6.99",
+        "Calories": "830-1250 Cal"
+    },
+    {
+        "Menu": "deals-and-combos",
+        "Item": "Deluxe Cravings Box",
+        "Price": "$6.99",
+        "Calories": "1220-1500 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "My Cravings Box",
         "Price": "$5.00",
-        "Calories": "670-1670 Cal"
+        "Calories": "680-1680 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Doritos® Locos Tacos Supreme Combo",
-        "Price": "$10.79",
+        "Price": "$7.99",
         "Calories": "570-990 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Doritos® Locos Tacos Combo",
-        "Price": "$8.49",
+        "Price": "$7.49",
         "Calories": "500-920 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "2 Chicken Chalupas Supreme Combo",
-        "Price": "$9.39",
-        "Calories": "820-1240 Cal"
+        "Price": "$8.89",
+        "Calories": "840-1260 Cal"
     },
     {
         "Menu": "deals-and-combos",
@@ -104,86 +140,74 @@
     {
         "Menu": "deals-and-combos",
         "Item": "Crunchwrap Supreme® Combo",
-        "Price": "$6.89",
+        "Price": "$7.19",
         "Calories": "700-1120 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "Nachos BellGrande® Combo",
-        "Price": "$9.89",
+        "Price": "$7.19",
         "Calories": "930-1350 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Crunchy Tacos Combo",
-        "Price": "$5.99",
+        "Price": "$6.29",
         "Calories": "500-920 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Crunchy Tacos Supreme® Combo",
-        "Price": "$15.99",
-        "Calories": "570-990 Cal"
+        "Price": "$7.19",
+        "Calories": "580-1000 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Soft Tacos Combo",
-        "Price": "$5.99",
+        "Price": "$6.29",
         "Calories": "550-970 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "3 Soft Tacos Supreme® Combo",
-        "Price": "$15.99",
+        "Price": "$7.19",
         "Calories": "620-1040 Cal"
     },
     {
         "Menu": "deals-and-combos",
         "Item": "Burrito Supreme® Combo",
-        "Price": "$9.69",
+        "Price": "$6.89",
         "Calories": "580-1000 Cal"
     },
     {
-        "Menu": "deals-and-combos",
-        "Item": "Breakfast Crunchwrap Combo",
-        "Price": "$5.19",
-        "Calories": "830-1110 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Hash Brown Toasted Breakfast Burrito Combo",
-        "Price": "$4.29",
-        "Calories": "740-1020 Cal"
-    },
-    {
-        "Menu": "deals-and-combos",
-        "Item": "Grande Toasted Breakfast Burrito Combo",
-        "Price": "$5.19",
-        "Calories": "720-1000 Cal"
-    },
-    {
         "Menu": "tacos",
-        "Item": "Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
+        "Item": "Cantina Crispy Melt Taco",
+        "Price": "$2.19",
         "Calories": "280 Cal"
     },
     {
         "Menu": "tacos",
-        "Item": "Spicy Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
-        "Calories": "290 Cal"
+        "Item": "Black Bean Cantina Crispy Melt Taco",
+        "Price": "$2.19",
+        "Calories": "260 Cal"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Cheesy Gordita Crunch",
+        "Price": "$3.99",
+        "Calories": "500 Cal"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "Doritos® Cheesy Gordita Crunch - Nacho Cheese",
+        "Price": "$4.19",
+        "Calories": "490 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "Soft Taco",
         "Price": "$1.39",
         "Calories": "180 Cal"
-    },
-    {
-        "Menu": "tacos",
-        "Item": "Soft Taco Supreme®",
-        "Price": "$1.89",
-        "Calories": "210 Cal"
     },
     {
         "Menu": "tacos",
@@ -194,61 +218,61 @@
     {
         "Menu": "tacos",
         "Item": "Crunchy Taco Supreme®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "190 Cal"
     },
     {
         "Menu": "tacos",
-        "Item": "3 Crunchy Tacos Combo",
-        "Price": "$5.99",
-        "Calories": "500-920 Cal"
+        "Item": "Soft Taco Supreme®",
+        "Price": "$1.99",
+        "Calories": "210 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "3 Crunchy Tacos Supreme® Combo",
-        "Price": "$15.99",
-        "Calories": "570-990 Cal"
+        "Price": "$7.19",
+        "Calories": "580-1000 Cal"
+    },
+    {
+        "Menu": "tacos",
+        "Item": "3 Crunchy Tacos Combo",
+        "Price": "$6.29",
+        "Calories": "500-920 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "Nacho Cheese Doritos® Locos Tacos",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "170 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "Nacho Cheese Doritos® Locos Tacos Supreme®",
-        "Price": "$2.39",
+        "Price": "$2.49",
         "Calories": "190 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "Chalupa Supreme",
         "Price": "$3.39",
-        "Calories": "350 Cal"
-    },
-    {
-        "Menu": "tacos",
-        "Item": "Cheesy Gordita Crunch",
-        "Price": "$3.69",
-        "Calories": "500 Cal"
+        "Calories": "360 Cal"
     },
     {
         "Menu": "tacos",
         "Item": "Supreme Taco Party Pack",
-        "Price": "$22.99",
+        "Price": "$17.99",
         "Calories": "190 Cal  Per Item"
     },
     {
         "Menu": "tacos",
         "Item": "Soft Taco Party Pack",
-        "Price": "$13.99",
+        "Price": "$14.99",
         "Calories": "180 Cal  Per Item"
     },
     {
         "Menu": "tacos",
         "Item": "Supreme Soft Taco Party Pack",
-        "Price": "$22.99",
+        "Price": "$17.99",
         "Calories": "210 Cal  Per Item"
     },
     {
@@ -267,7 +291,7 @@
         "Menu": "burritos",
         "Item": "Quesarito",
         "Price": "$3.39",
-        "Calories": "650 Cal"
+        "Calories": "640 Cal"
     },
     {
         "Menu": "burritos",
@@ -284,13 +308,13 @@
     {
         "Menu": "nachos",
         "Item": "Nachos BellGrande®",
-        "Price": "$3.89",
-        "Calories": "740 Cal"
+        "Price": "$3.99",
+        "Calories": "730 Cal"
     },
     {
         "Menu": "nachos",
         "Item": "Nachos BellGrande® Combo",
-        "Price": "$9.89",
+        "Price": "$7.19",
         "Calories": "930-1350 Cal"
     },
     {
@@ -302,7 +326,7 @@
     {
         "Menu": "quesadillas",
         "Item": "Chicken Quesadilla",
-        "Price": "$3.89",
+        "Price": "$4.19",
         "Calories": "510 Cal"
     },
     {
@@ -314,91 +338,97 @@
     {
         "Menu": "quesadillas",
         "Item": "Steak Quesadilla",
-        "Price": "$4.19",
+        "Price": "$4.39",
         "Calories": "520 Cal"
     },
     {
         "Menu": "quesadillas",
         "Item": "Cheese Quesadilla",
-        "Price": "$3.29",
+        "Price": "$3.39",
         "Calories": "470 Cal"
     },
     {
         "Menu": "quesadillas",
         "Item": "Black Bean Quesarito",
-        "Price": "$3.29",
+        "Price": "$3.49",
         "Calories": "630 Cal"
     },
     {
         "Menu": "quesadillas",
         "Item": "Quesarito",
-        "Price": "$3.39",
-        "Calories": "650 Cal"
+        "Price": "$3.59",
+        "Calories": "640 Cal"
     },
     {
         "Menu": "specialties",
-        "Item": "Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
+        "Item": "Cantina Crispy Melt Taco",
+        "Price": "$2.19",
         "Calories": "280 Cal"
     },
     {
         "Menu": "specialties",
-        "Item": "Spicy Crispy Chicken Sandwich Taco",
-        "Price": "$1.49",
-        "Calories": "290 Cal"
+        "Item": "Black Bean Cantina Crispy Melt Taco",
+        "Price": "$2.19",
+        "Calories": "260 Cal"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Cheesy Gordita Crunch",
+        "Price": "$3.99",
+        "Calories": "500 Cal"
+    },
+    {
+        "Menu": "specialties",
+        "Item": "Doritos® Cheesy Gordita Crunch - Nacho Cheese",
+        "Price": "$4.19",
+        "Calories": "490 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Cheesy Fiesta Potatoes",
         "Price": "$1.69",
-        "Calories": "230 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Black Bean Chalupa",
         "Price": "$3.29",
-        "Calories": "330 Cal"
+        "Calories": "340 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Black Bean Crunchwrap Supreme®",
-        "Price": "$3.89",
+        "Price": "$3.99",
         "Calories": "520 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Chalupa Supreme",
         "Price": "$3.39",
-        "Calories": "350 Cal"
+        "Calories": "360 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Crunchwrap Supreme®",
-        "Price": "$3.89",
+        "Price": "$3.99",
         "Calories": "530 Cal"
     },
     {
         "Menu": "specialties",
-        "Item": "Cheesy Gordita Crunch",
-        "Price": "$3.69",
-        "Calories": "500 Cal"
-    },
-    {
-        "Menu": "specialties",
         "Item": "Power Menu Bowl",
-        "Price": "$5.69",
-        "Calories": "470 Cal"
+        "Price": "$5.89",
+        "Calories": "450 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Power Menu Bowl - Veggie",
-        "Price": "$5.59",
-        "Calories": "430 Cal"
+        "Price": "$5.89",
+        "Calories": "410 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Black Bean Quesarito",
-        "Price": "$3.29",
+        "Price": "$3.49",
         "Calories": "630 Cal"
     },
     {
@@ -410,7 +440,7 @@
     {
         "Menu": "specialties",
         "Item": "Soft Taco Supreme®",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "210 Cal"
     },
     {
@@ -428,38 +458,38 @@
     {
         "Menu": "specialties",
         "Item": "Nacho Cheese Doritos® Locos Tacos",
-        "Price": "$1.89",
+        "Price": "$1.99",
         "Calories": "170 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Steak Quesadilla",
-        "Price": "$4.19",
+        "Price": "$4.39",
         "Calories": "520 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Quesarito",
-        "Price": "$3.39",
-        "Calories": "650 Cal"
+        "Price": "$3.59",
+        "Calories": "640 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Chicken Quesadilla",
-        "Price": "$3.89",
+        "Price": "$4.19",
         "Calories": "510 Cal"
     },
     {
         "Menu": "specialties",
         "Item": "Nachos BellGrande®",
-        "Price": "$3.89",
-        "Calories": "740 Cal"
+        "Price": "$3.99",
+        "Calories": "730 Cal"
     },
     {
         "Menu": "sides-sweets",
         "Item": "Cheesy Fiesta Potatoes",
         "Price": "$1.69",
-        "Calories": "230 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "sides-sweets",
@@ -471,7 +501,7 @@
         "Menu": "sides-sweets",
         "Item": "Black Beans and Rice",
         "Price": "$1.49",
-        "Calories": "170 Cal"
+        "Calories": "160 Cal"
     },
     {
         "Menu": "sides-sweets",
@@ -519,7 +549,7 @@
         "Menu": "sides-sweets",
         "Item": "Red Sauce",
         "Price": "$0.25",
-        "Calories": "20 Cal"
+        "Calories": "15 Cal"
     },
     {
         "Menu": "sides-sweets",
@@ -589,20 +619,8 @@
     },
     {
         "Menu": "drinks",
-        "Item": "Drinks Party Pack",
-        "Price": "$4.00",
-        "Calories": "0-1120 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Wild Strawberry Lemonade Freeze",
-        "Price": "$2.79",
-        "Calories": "180-220 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Blue Raspberry Lemonade Freeze",
-        "Price": "$2.99",
+        "Item": "Cherry Twilight Freeze",
+        "Price": "$2.89",
         "Calories": "150-180 Cal"
     },
     {
@@ -626,110 +644,86 @@
     {
         "Menu": "drinks",
         "Item": "Fountain Drink",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "0-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Diet Pepsi®",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Pepsi® Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew®",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "220-410 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew Baja Blast®",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "220-420 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Baja Blast™ Zero Sugar",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "5-15 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Mountain Dew® Kickstart™ Orange Citrus",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "70-130 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Sierra Mist®",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "200-380 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "G2 Gatorade® Fruit Punch",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "30-50 Cal"
     },
     {
         "Menu": "drinks",
-        "Item": "Iced Tea Special",
-        "Price": "$0.99",
-        "Calories": "0 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Sweet Tea Special",
-        "Price": "$0.99",
-        "Calories": "100-180 Cal"
-    },
-    {
-        "Menu": "drinks",
         "Item": "Tropicana® Pink Lemonade",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "210-390 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Brisk® Mango Fiesta",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "100-180 Cal"
     },
     {
         "Menu": "drinks",
         "Item": "Lipton® Unsweetened Iced Tea",
-        "Price": "$1.99",
+        "Price": "$1.00",
         "Calories": "0 Cal"
     },
     {
         "Menu": "drinks",
-        "Item": "Dr Pepper®",
-        "Price": "$1.99",
-        "Calories": "190-360 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Aquafina® Bottled Water",
-        "Price": "$1.49",
-        "Calories": "0 Cal"
-    },
-    {
-        "Menu": "drinks",
-        "Item": "Orange Juice",
-        "Price": "$1.99",
-        "Calories": "140 Cal"
+        "Item": "Drinks Party Pack",
+        "Price": "$4.00",
+        "Calories": "0-1120 Cal"
     },
     {
         "Menu": "drinks",
@@ -764,38 +758,38 @@
     {
         "Menu": "party-packs",
         "Item": "Taco Party Pack",
-        "Price": "$13.99",
+        "Price": "$14.99",
         "Calories": "170 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
         "Item": "Soft Taco Party Pack",
-        "Price": "$13.99",
+        "Price": "$14.99",
         "Calories": "180 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
         "Item": "Variety Taco Party Pack",
-        "Price": "$16.49",
+        "Price": "$16.99",
         "Calories": "170-170 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
         "Item": "Supreme Taco Party Pack",
-        "Price": "$22.99",
+        "Price": "$17.99",
         "Calories": "190 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
         "Item": "Supreme Soft Taco Party Pack",
-        "Price": "$22.99",
+        "Price": "$17.99",
         "Calories": "210 Cal  Per Item"
     },
     {
         "Menu": "party-packs",
         "Item": "Supreme Variety Taco Party Pack",
-        "Price": "$22.99",
-        "Calories": "190 Cal  Per Item"
+        "Price": "$18.99",
+        "Calories": "190-190 Cal  Per Item"
     },
     {
         "Menu": "cravings-value-menu",
@@ -819,7 +813,7 @@
         "Menu": "cravings-value-menu",
         "Item": "Cheesy Bean and Rice Burrito",
         "Price": "$1.00",
-        "Calories": "420 Cal"
+        "Calories": "410 Cal"
     },
     {
         "Menu": "cravings-value-menu",
@@ -838,6 +832,18 @@
         "Item": "Cinnamon Twists",
         "Price": "$1.00",
         "Calories": "170 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Hash Brown",
+        "Price": "$1.29",
+        "Calories": "160 Cal"
+    },
+    {
+        "Menu": "vegetarian",
+        "Item": "Black Bean Cantina Crispy Melt Taco",
+        "Price": "$2.19",
+        "Calories": "260 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -849,31 +855,31 @@
         "Menu": "vegetarian",
         "Item": "Cheesy Fiesta Potatoes",
         "Price": "$1.69",
-        "Calories": "230 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "vegetarian",
         "Item": "Black Bean Chalupa",
         "Price": "$3.29",
-        "Calories": "330 Cal"
+        "Calories": "340 Cal"
     },
     {
         "Menu": "vegetarian",
         "Item": "Black Bean Quesarito",
-        "Price": "$3.29",
+        "Price": "$3.49",
         "Calories": "630 Cal"
     },
     {
         "Menu": "vegetarian",
         "Item": "Black Bean Crunchwrap Supreme®",
-        "Price": "$3.89",
+        "Price": "$3.99",
         "Calories": "520 Cal"
     },
     {
         "Menu": "vegetarian",
         "Item": "Power Menu Bowl - Veggie",
-        "Price": "$5.59",
-        "Calories": "430 Cal"
+        "Price": "$5.89",
+        "Calories": "410 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -885,7 +891,7 @@
         "Menu": "vegetarian",
         "Item": "Cheesy Bean and Rice Burrito",
         "Price": "$1.00",
-        "Calories": "420 Cal"
+        "Calories": "410 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -896,7 +902,7 @@
     {
         "Menu": "vegetarian",
         "Item": "Cheese Quesadilla",
-        "Price": "$3.29",
+        "Price": "$3.39",
         "Calories": "470 Cal"
     },
     {
@@ -908,8 +914,8 @@
     {
         "Menu": "vegetarian",
         "Item": "Black Beans and Rice",
-        "Price": "$1.49",
-        "Calories": "170 Cal"
+        "Price": "$1.59",
+        "Calories": "160 Cal"
     },
     {
         "Menu": "vegetarian",
@@ -920,38 +926,32 @@
     {
         "Menu": "vegetarian",
         "Item": "Cinnabon Delights® 2 Pack",
-        "Price": "$1.29",
+        "Price": "$1.49",
         "Calories": "160 Cal"
     },
     {
         "Menu": "vegetarian",
         "Item": "Cinnabon Delights® 12 Pack",
-        "Price": "$5.29",
+        "Price": "$5.49",
         "Calories": "930 Cal"
-    },
-    {
-        "Menu": "vegetarian",
-        "Item": "Hash Brown",
-        "Price": "$1.29",
-        "Calories": "160 Cal"
     },
     {
         "Menu": "power-menu",
         "Item": "Power Menu Bowl",
         "Price": "$5.69",
-        "Calories": "470 Cal"
+        "Calories": "450 Cal"
     },
     {
         "Menu": "power-menu",
         "Item": "Power Menu Bowl - Veggie",
         "Price": "$5.59",
-        "Calories": "430 Cal"
+        "Calories": "410 Cal"
     },
     {
         "Menu": "breakfast",
         "Item": "Cheesy Toasted Breakfast Burrito",
         "Price": "$1.29",
-        "Calories": "340 Cal"
+        "Calories": "350 Cal"
     },
     {
         "Menu": "breakfast",
@@ -969,13 +969,13 @@
         "Menu": "breakfast",
         "Item": "Hash Brown Toasted Breakfast Burrito",
         "Price": "$2.19",
-        "Calories": "580 Cal"
+        "Calories": "570 Cal"
     },
     {
         "Menu": "breakfast",
         "Item": "Hash Brown Toasted Breakfast Burrito Combo",
         "Price": "$4.29",
-        "Calories": "740-1020 Cal"
+        "Calories": "730-1010 Cal"
     },
     {
         "Menu": "breakfast",
@@ -1053,7 +1053,7 @@
         "Menu": "sweets",
         "Item": "Cheesy Fiesta Potatoes",
         "Price": "$1.69",
-        "Calories": "230 Cal"
+        "Calories": "240 Cal"
     },
     {
         "Menu": "sweets",
@@ -1065,7 +1065,7 @@
         "Menu": "sweets",
         "Item": "Black Beans and Rice",
         "Price": "$1.49",
-        "Calories": "170 Cal"
+        "Calories": "160 Cal"
     },
     {
         "Menu": "sweets",
@@ -1113,7 +1113,7 @@
         "Menu": "sweets",
         "Item": "Red Sauce",
         "Price": "$0.25",
-        "Calories": "20 Cal"
+        "Calories": "15 Cal"
     },
     {
         "Menu": "sweets",
